@@ -4,7 +4,7 @@ charset-normalizer==3.4.1
 Django==4.2.20
 django-ckeditor==6.7.2
 django-jazzmin==3.0.1
-django-js-asset==3.1.2
+django-js-asset==2.2.2
 django-modeltranslation==0.19.13
 idna==3.10
 phonenumbers==9.0.1
