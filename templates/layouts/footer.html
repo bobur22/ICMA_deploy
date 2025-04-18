@@ -1,0 +1,77 @@
+{% load static %}
+{% load i18n %}
+
+<!-- Footer Area -->
+<footer id="footer" class="footer ">
+    <!-- Footer Top -->
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-footer">
+                        <h2>{% translate 'Biz haqimizda' %}</h2>
+                        <p>{% translate 'Innovatsion rivojlanish agentligi huzuridagi Xalqaro molekulyar allergologiya markazi' %}</p>
+                        <!-- Social -->
+                        <ul class="social">
+                            <li><a href="https://t.me/icmauz"><i class="icofont-telegram"></i></a></li>
+                            <li><a href="https://icma.uz"><i class="icofont-web"></i></a></li>
+                        </ul>
+                        <!-- End Social -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-footer f-link">
+                        <h2>{% translate 'Foydali havolalar' %}</h2>
+                        <div class="row">
+                            <div class="col-lg-7 col-md-6 col-12">
+                                <ul>
+                                    <li><a href="{% url 'about_center' %}"><i class="fa fa-caret-right" aria-hidden="true"></i>{% translate 'Markaz' %}</a></li>
+                                    <li><a href="{% url 'administrarion' %}"><i class="fa fa-caret-right" aria-hidden="true"></i>{% translate 'Rahbariyat' %}</a></li>
+                                    <li><a href="{% url 'infrostructure' %}"><i class="fa fa-caret-right" aria-hidden="true"></i>{% translate 'infratuzilma' %}</a></li>
+                                    <li><a href="{% url 'employees' %}"><i class="fa fa-caret-right" aria-hidden="true"></i>{% translate 'Xodimolar' %}</a></li>
+                                    <li><a href="{% url 'corruption' %}"><i class="fa fa-caret-right" aria-hidden="true"></i>{% translate 'Korrupsiya' %}</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-footer">
+                        <h2>{% translate 'Ish vaqti' %}</h2>
+                        <p></p>
+                        <ul class="time-sidual">
+                            <li class="day">{% translate 'Dushanbadan - Jumagacha' %}<span></span></li>
+
+                            <li class="day">09:00 - 18:00</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="single-footer">
+                        <h2>{% translate "Bog'lanish" %}</h2>
+                        <ul class="time-sidual">
+                            <li class="day">{% translate 'Manzil: 954F+Q3Q, Тоshkent, Toshkent Viloyati, Oʻzbekiston' %}<span></span></li>
+
+                            <li class="day"><a href="tel:+998555143494">Tel: +998 55 514 34 94</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ End Footer Top -->
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="copyright-content">
+                        <p>© {% translate 'Xalqaro molekulyar allergologiya markazi   |   Barcha huquqlar himoyalangan' %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ End Copyright -->
+</footer>
+<!--/ End Footer Area -->

@@ -1,0 +1,184 @@
+{% load static %}
+{% load i18n %}
+
+<!-- Header Area -->
+<header class="header">
+
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <div class="row row-cols-2 row-cols-lg-2 align-items-center d-lg-flex justify-content-between">
+                <div class="col-sm-7 col-md-6 col-lg-4 col-12 px-3 px-md-0">
+                    <!-- Contact -->
+                    <ul class="top-link m-sm-0">
+                        <li><a href="{% url 'about_center' %}">{% translate 'Markaz' %}</a></li>
+                        <li><a>|</a></li>
+                        <li><a href="https://innovation.gov.uz/">{% translate 'Agentlik' %}</a></li>
+                        <li><a>|</a></li>
+                        <li><a href="https://my.gov.uz/ru">{% translate 'Davlat xizmatlari' %}</a></li>
+                    </ul>
+                    <!-- End Contact -->
+                </div>
+                <div class="col-sm-5 col-md-6 col-lg-7 col-12 px-4 px-md-0">
+                    <!-- Top Contact -->
+                    <ul class="top-contact row row-cols-2 d-flex justify-content-around justify-content-sm-between justify-content-md-start align-items-center">
+
+                        <li class="d-none d-lg-block "><i class="fa icofont-telegram"></i><a
+                                href="//t.me/icmauz">{% translate 'Telegram' %}</a></li>
+                        <li class="d-none d-lg-block"><i class="fa fa-phone"></i><a href="tel:+998555143494">+998
+                            55 514 34 94</a></li>
+                        <li class="d-none d-lg-block"><i class="fa fa-envelope"></i><a
+                                href="mailto:info@icma.uz">info@icma.uz</a></li>
+
+                        <ul class="d-flex d-lg-none justify-content-between align-items-center">
+                            <li class="d-block d-sm-none d-md-block" style="margin-right: 15px;"><a href="//t.me/icmauz"><i
+                                    class="fa icofont-telegram" style="font-size: 25px;"></i></a></li>
+                            <li class="d-block d-sm-none d-md-block"><a href="tel:+998555143494"><i class="fa fa-phone" style="font-size: 25px;"></i></a>
+                            </li>
+                            <li class=""><a href="mailto:info@icma.uz">info@icma.uz</a></li>
+                            <li></li>
+                        </ul>
+                        <!-- Language Selector -->
+                        <li class="li_lang">
+                            <div class="dropdown">
+                                {% get_current_language as Language_code %}
+                                {% get_available_languages as LANGUAGES %}
+                                {% get_language_info_list for LANGUAGES as languages %}
+                                <a class="btn text-white dropdown-toggle px-3 py-2" href="#" role="button"
+                                   id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    {% if request.LANGUAGE_CODE == 'uz' %}
+                                        O‘z
+                                    {% elif request.LANGUAGE_CODE == 'ru' %}
+                                        Ру
+                                    {% elif request.LANGUAGE_CODE == 'en' %}
+                                        Eng
+                                    {% endif %}
+                                </a>
+                                <ul class="dropdown-menu row align-items-center" aria-labelledby="dropdownMenuButton1">
+                                    {% for lang in languages %}
+                                        <li class="col mb-1">
+                                            <a class="dropdown-item px-3 rounded {% if lang.code == Language_code %}active text-white{% endif %}"
+                                               href="/{{ lang.code }}{{ request.get_full_path|slice:'3:' }}">
+                                                {{ lang.name_local|capfirst }}
+                                            </a>
+                                        </li>
+
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- End Language Selector -->
+                    </ul>
+                    <!-- End Top Contact -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Topbar -->
+
+    {% url 'about_center' as about_center %}
+    {% url 'administrarion' as administration %}
+    {% url 'infrostructure' as infrastructure %}
+    {% url 'articles' as articles %}
+    {% url 'employees' as employees %}
+    {% url 'corruption' as corruption %}
+    {% url 'news' as news %}
+    {% url 'monitoring' as monitoring %}
+    {% url 'contact_us' as contact_us %}
+    {% url 'index' as index %}
+    {% url 'passport' as passport %}
+
+    <!-- Header Inner -->
+    <div class="header-inner">
+        <div class="container">
+            <div class="inner">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-md-3 col-lg-3 col-12">
+                        <!-- Start Logo -->
+                        <div class="logo">
+                            {% if request.LANGUAGE_CODE == 'uz' %}
+                                <a href="{% url 'index' %}">
+                                    <img src="{% static 'main/img/language_uz.svg' %}" alt="Logo">
+                                </a>
+                            {% elif request.LANGUAGE_CODE == 'ru' %}
+                                <a href="{% url 'index' %}">
+                                    <img src="{% static 'main/img/language_ru.svg' %}" alt="Logo">
+                                </a>
+                            {% elif request.LANGUAGE_CODE == 'en' %}
+                                <a href="{% url 'index' %}">
+                                    <img src="{% static 'main/img/language_en.svg' %}" alt="Logo">
+                                </a>
+                            {% endif %}
+
+                        </div>
+                        <!-- End Logo -->
+                        <div class="mobile-nav"></div>
+                    </div>
+
+                    <div class="col-md-9 col-lg-7 col-12">
+                        <!-- Main Menu -->
+                        <div class="main-menu">
+                            <nav class="navigation">
+                                <ul class="nav menu d-flex justify-content-md-between align-content-center">
+                                    <li class="{% if request.path == about_center or request.path == administration or request.path == infrastructure or request.path == articles or request.path == employees or request.path == corruption or '/articles/' in request.path %}active{% endif %}">
+                                        <a href="{% url 'about_center' %}">{% translate 'Markaz' %}<i
+                                                class="icofont-rounded-down"></i></a>
+                                        <ul class="dropdown">
+                                            <li class="{% if request.path == about_center %}active{% endif %}">
+                                                <a href="{% url 'about_center' %}">{% translate 'Markaz haqida' %}</a>
+                                            </li>
+                                            <li class="{% if request.path == administration %}active{% endif %}">
+                                                <a href="{% url 'administrarion' %}">{% translate 'Rahbariyat' %}</a>
+                                            </li>
+                                            <li class="{% if request.path == infrastructure %}active{% endif %}">
+                                                <a href="{% url 'infrostructure' %}">{% translate 'Infratuzilma' %}</a>
+                                            </li>
+                                            <li class="{% if request.path == articles or '/articles/' in request.path %}active{% endif %}">
+                                                <a href="{% url 'articles' %}">{% translate 'Maqolalar' %}</a>
+                                            </li>
+                                            <li class="{% if request.path == employees %}active{% endif %}">
+                                                <a href="{% url 'employees' %}">{% translate 'Xodimlar' %}</a>
+                                            </li>
+                                            <li class="{% if request.path == corruption %}active{% endif %}">
+                                                <a href="{% url 'corruption' %}">{% translate 'Korrupsiya' %}</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="{% if request.path == news or '/news/' in request.path %}active{% endif %}">
+                                        <a href="{% url 'news' %}">{% translate 'Yangiliklar' %}</a>
+                                    </li>
+                                    <li class="{% if request.path == monitoring or '/monitoring/' in request.path %}active{% endif %}">
+                                        <a href="{% url 'monitoring' %}">{% translate 'Aeromonitoring' %}</a>
+                                    </li>
+                                    <li class="{% if request.path == passport %}active{% endif %}">
+                                        <a href="{% url 'passport' %}">{% translate 'Xizmatlar' %}<i
+                                                class="icofont-rounded-down"></i></a>
+                                        <ul class="dropdown">
+                                            <li class="{% if request.path == passport %}active{% endif %}">
+                                                <a href="{% url 'passport' %}">{% translate 'Allergiya pasporti' %}</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="d-block d-lg-none"><a
+                                            href="{% url 'contact_us' %}">{% translate 'Aloqa' %}</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- End Main Menu -->
+                    </div>
+
+                    <div class="col-lg-1 px-0 col-12">
+                        <div class="get-quote active">
+                            <a href="{% url 'contact_us' %}" class="btn">{% translate 'Aloqa' %}</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Inner -->
+</header>
+<!-- End Header Area -->
+

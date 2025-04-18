@@ -1,0 +1,55 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>{% translate 'Markaz Haqida' %}</h2>
+                        <ul class="bread-list">
+                            <li><a href='{% url 'about_center' %}'>{% translate 'Markaz' %}</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li><a href="{% url 'about_center' %}">{% translate 'Markaz haqida' %}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Portfolio Details Area -->
+    <section class="pf-details section">
+        <div class="container">
+            <div class="row">
+
+                {% for c in center %}
+
+                    <div class="col-12">
+                        <div class="inner-content">
+                            <div class="image-slider">
+                                <div class="pf-details-slider">
+                                    <img src="{{ c.c_center_img_1.url }}" alt="#">
+                                    <img src="{{ c.c_center_img_2.url }}" alt="#">
+                                    <img src="{{ c.c_center_img_3.url }}" alt="#">
+                                </div>
+                            </div>
+                            <div class="body-text">
+                                <h3>{{ c.c_header }}</h3>
+                                <p>{{ c.c_paragraph|safe }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Details Area -->
+
+{% endblock body %}

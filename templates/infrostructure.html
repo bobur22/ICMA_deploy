@@ -1,0 +1,40 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+
+    <!--/bo'lim uchun nom -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>{% trans 'Infrotuzilma' %}</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'about_center' %}">{% trans 'Markaz' %}</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li><a href="{% url 'infrostructure' %}">{% trans 'Infrotuzilma' %}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Bo'lim uchun nom -->
+
+    <div class="service-details-area section">
+        <div class="container">
+            {% for i in infrostructure %}
+
+                <div class="services-details-img">
+                    <img src="{{ i.inf_img.url }}" alt="#">
+                    <h2>{{ i.inf_header }}</h2>
+                    <p>{{ i.inf_paragraph }}</p>
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock body %}

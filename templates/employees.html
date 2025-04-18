@@ -1,0 +1,50 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+
+    <!--/bo'lim uchun nom -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>{% trans 'Xodimlar' %}</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'about_center' %}">{% trans 'Markaz' %}</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li><a href="{% url 'employees' %}">{% trans 'Xodimlar' %}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Bo'lim uchun nom -->
+
+    <section id="team" class="team section single-page">
+        <div class="container">
+            <div class="row">
+                {% for employee in employees %}
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <!-- Single Team -->
+                        <div class="single-team">
+                            <div class="t-head">
+                                <img src="{{ employee.employees_img.url }}" alt="#">
+                            </div>
+                            <div class="t-bottom">
+                                <p>{{ employee.emp_speciality }}</p>
+                                <h2>{{ employee.emp_full_name }}</h2>
+                            </div>
+                        </div>
+                        <!-- End Single Team -->
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+{% endblock body %}

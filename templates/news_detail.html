@@ -1,0 +1,78 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+
+    <!--/bo'lim uchun nom -->
+    <div class="breadcrumbs overlay" id="news_detail">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>{{ news.n_header }}</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'news' %}">{% trans 'Yangiliklar' %}</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li><a href="#news_detail">{{ news.n_header }}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Bo'lim uchun nom -->
+
+    <div class="service-details-area section pb-0 blog">
+        <div class="container">
+            <div class="single-news">
+                <div class="news-head">
+                    <img src="{{ news.n_news_img.url }}" alt="#">
+                </div>
+                <div class="news-body">
+                    <div class="services-details-img news-content">
+                        <div class="d-flex justify-content-start align-content-center">
+                            <span class="date">{{ news.n_date|date:"d.m.Y" }}</span>
+                            <span class="date pt-1" style="font-size: 14px; background: none; color: #1A76D1;"><i
+                                    class="bi bi-eye"
+                                    style="padding-right: 6px"></i>{{ news.n_view_counter }}</span>
+                        </div>
+                        <h2 class="pt-3">{{ news.n_header }}</h2>
+                        <p class="text">{{ news.n_paragraph|safe }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="blog grid section">
+        <div class="container">
+            <div class="row row-cols-2 row-cols-md-3 g-4">
+                {% for n in newses %}
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-news">
+                            <div class="news-head">
+                                <img class="" src="{{ n.n_news_img.url }}" alt="#">
+                            </div>
+                            <div class="news-body">
+                                <div class="news-content">
+                                    <div class="d-flex justify-content-between align-content-center">
+                                        <span class="date">{{ n.n_date|date:"d.m.Y" }}</span>
+                                        <span class="date pt-1" style="font-size: 14px; background: none; color: #1A76D1;"><i class="bi bi-eye"
+                                                                                           style="padding-right: 6px"></i>{{ n.n_view_counter }}</span>
+                                    </div>
+                                    <h2><a href="{% url 'news_detail' id=n.id %}">{{ n.n_header }}</a></h2>
+                                    <p class="text">{{ n.n_paragraph|truncatechars_html:77|safe }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endfor %}
+            </div>
+
+        </div>
+    </section>
+
+{% endblock body %}

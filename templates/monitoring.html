@@ -1,0 +1,64 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+
+    <!--/bo'lim uchun nom -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>{% trans 'Aeromonitoring' %}</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'monitoring' %}">{% trans 'Aeromonitoring' %}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Bo'lim uchun nom -->
+
+    <section class="blog section" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-15">
+                    <div class="section-title" style=" padding: 0 20px ">
+                        <h5>
+                            {% blocktrans %}
+                                O‘zbekiston Respublikasi Prezidentining “Allergik kasalliklarning oldini olish va
+                                davolash
+                                sifatini oshirish chora-tadbirlari to‘g‘risida” 2023-yil 23-noyabrdagi PQ-371-sonli
+                                qarorning ijrosini ta’minlash maqsadida O‘zbekiston respublikasi shahar va viloyatlari
+                                kesimida 1m³ havoda allergen o‘simliklar gulchanglari va zamburug‘ sporalari tarqalishi
+                                monitoring natijalari
+                            {% endblocktrans %}
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for i in monitorings %}
+                    <div class="col-lg-4 col-md-6 col-12 mt-4">
+                        <!-- Single Blog -->
+                        <div class="single-news">
+                            <div class="news-head">
+                                <img src="{{ i.m_img.url }}" alt="#">
+                            </div>
+                            <div class="news-body">
+                                <div class="news-content">
+                                    <h2 class="mb-0 mt-2"><a
+                                            href="{% url 'monitoring_detail' id=i.id %}">{{ i.m_header }}</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+{% endblock body %}

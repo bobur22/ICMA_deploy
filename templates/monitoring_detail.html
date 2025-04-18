@@ -1,0 +1,63 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+
+    <!--/bo'lim uchun nom -->
+    <div class="breadcrumbs overlay" id="monitorint_detail">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>{{ monitoring_d.m_header }}</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'monitoring' %}">{% trans 'Aeromonitoring' %}</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li><a href="#monitorint_detail">{{ monitoring_d.m_header }}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Bo'lim uchun nom -->
+
+    <div class="service-details-area section pb-0">
+        <div class="container">
+            <div class="services-details-img">
+                <object data="{{ monitoring_d.m_file.url }}" type="application/pdf" width="100%" height="800px">
+                    {% trans 'PDF formatini ko‘rsatib bo‘lmadi.' %}<a
+                        href="{{ monitoring_d.m_file.url }}">{% trans "Buning o‘rniga yuklab oling." %}</a></p>
+                </object>
+                <h2 class="pt-3">{{ monitoring_d.m_header }}</h2>
+                <p>{{ monitoring_d.m_paragraph }}</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="blog section pt-4" id="blog">
+        <div class="container">
+            <div class="row">
+                {% for i in monitorings %}
+                    <div class="col-lg-4 col-md-6 col-12 mt-4">
+                        <!-- Single Blog -->
+                        <div class="single-news">
+                            <div class="news-head">
+                                <img src="{{ i.m_img.url }}" alt="#">
+                            </div>
+                            <div class="news-body">
+                                <div class="news-content">
+                                    <h2 class="mb-0 mt-2"><a
+                                            href="{% url 'monitoring_detail' id=i.id %}">{{ i.m_header }}</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+{% endblock body %}

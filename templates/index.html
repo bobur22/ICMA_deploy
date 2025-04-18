@@ -1,0 +1,437 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-outter"></div>
+            <div class="loader-inner"></div>
+
+            <div class="indicator">
+                <svg width="16px" height="12px">
+                    <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Slider Area -->
+    <section class="slider">
+        <div class="hero-slider">
+            <!-- Start Single Slider -->
+            <div class="single-slider" style="background-image: url({% static 'main/img/slider2.jpg' %})">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="text">
+                                <h1>
+                                    {% blocktrans %}
+                                        Xalqaro <span>Molekulyar </span>Allergologiya <span>Markazi </span>
+                                    {% endblocktrans %}
+                                </h1>
+                                <p>{% translate 'Innovatsion rivojlanish agentligi huzuridagi' %}</p>
+                                <div class="button">
+                                    <a href="{% url 'about_center' %}" class="btn">{% translate 'Biz haqimizda' %}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Single Slider -->
+            <!-- Start Single Slider -->
+            <div class="single-slider" style="background-image:url({% static 'main/img/allergy1.jpg' %})">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="text">
+                                <h1>
+                                    {% blocktrans %}
+                                        Agar sizda <span>allergik </span>kasallik bo'lsa <span>davolaymiz!</span>
+                                    {% endblocktrans %}
+                                </h1>
+                                <p>{% translate 'Bizning markazimizda quyidagi kasalliklar bilan og`rigan bemorlarga yuqori texnologik tekshiruvlar qilinadi va ambulator yoki statsionar sharoitda davolanadi. ' %}</p>
+                                <div class="button">
+                                    <a href="{% url 'contact_us' %}" class="btn">{% translate 'Aloqa' %}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start End Slider -->
+            <!-- Start Single Slider -->
+            <div class="single-slider" style="background-image:url({% static 'main/img/slider3.jpg' %})">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="text">
+                                <h1>
+                                    {% blocktrans %}
+                                        <span>Har haftalik </span>Aeromonitoring <span></span>natijalari
+                                    {% endblocktrans %}
+                                </h1>
+                                <p>{% translate "Biz har hafta havodagi gul changi miqdorini Aeromonitoring natijalariga asoslanib baholaymiz va aholiga muntazam ravishda ma'lumot beramiz." %}</p>
+                                <div class="button">
+                                    <a href="{% url 'monitoring' %}"
+                                       class="btn primary">{% translate 'Aeromonitoring natijalari' %}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Single Slider -->
+        </div>
+    </section>
+    <!--/ End Slider Area -->
+
+    <!-- Start Schedule Area -->
+    <section class="schedule">
+        <div class="container">
+            <div class="schedule-inner">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <!-- single-schedule -->
+                        <div class="single-schedule first">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i class="fa fa-ambulance"></i>
+                                </div>
+                                <div class="single-content">
+                                    <h4>{% translate 'Ambulator xizmat' %}</h4>
+                                    <p>{% translate 'Zamonaviy uskunalar yordamida tashxis qo‘yish va davolash bo‘yicha xizmat ko‘rsatadigan ambulatoriya.' %}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <!-- single-schedule -->
+                        <div class="single-schedule middle">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i class="icofont-prescription"></i>
+                                </div>
+                                <div class="single-content">
+                                    <h4>{% translate 'Laboratoriya xizmati' %}</h4>
+                                    <p>{% translate 'Kasalliklar diagnostikasi uchun tekshiruvlarni amalga oshiradigan zamonaviy laboratoriya' %}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <!-- single-schedule -->
+                        <div class="single-schedule last">
+                            <div class="inner">
+                                <div class="icon">
+                                    <i class="icofont-ui-clock"></i>
+                                </div>
+                                <div class="single-content">
+                                    <!-- <span>Donec luctus</span> -->
+                                    <h4>{% translate 'Ish vaqti' %}</h4>
+                                    <ul class="time-sidual">
+                                        <li class="day">{% translate 'Dushanba - Juma' %}<span>8.00 - 20.00</span></li>
+                                        <li class="day">{% translate 'Shanba' %}<span>9.00 - 18.30</span></li>
+                                        <li class="day">{% translate 'Yakshanba' %}<span>9.00 - 15.00</span></li>
+                                    </ul>
+                                    {#                                    <a href="#">BATAFSIL MA'LUMOT<i class="fa fa-long-arrow-right"></i></a>#}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/End Start schedule Area -->
+
+    <!-- Yangiliklar -->
+    <section class="blog section" style="padding-top: 0px" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>{% translate "So'nggi ma'lumotlar va yangiliklar" %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-2 row-cols-md-3 g-4">
+                {% for news in newses %}
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-news">
+                            <div class="news-head">
+                                <img class="" src="{{ news.n_news_img.url }}" alt="#">
+                            </div>
+                            <div class="news-body">
+                                <div class="news-content">
+                                    <div class="d-flex justify-content-between align-content-center">
+                                        <span class="date">{{ news.n_date|date:"d.m.Y" }}</span>
+                                        <span class="date pt-1"
+                                              style="font-size: 14px; background: none; color: #1A76D1;"><i
+                                                class="bi bi-eye"
+                                                style="padding-right: 6px"></i>{{ news.n_view_counter }}</span>
+                                    </div>
+                                    <h2><a href="{% url 'news_detail' id=news.id %}">{{ news.n_header }}</a></h2>
+                                    <p class="text">{{ news.n_paragraph|truncatechars_html:77|safe }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- Yangiliklar -->
+
+    <!-- Start Fun-facts -->
+    <div id="fun-facts" class="fun-facts section overlay">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+
+                {% for statistic in statistics %}
+
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <!-- Start Single Fun -->
+                        <div class="single-fun">
+                            <i class="icofont icofont-user-alt-3"></i>
+                            <div class="content">
+                                <span class="counter">{{ statistic.s_employeements }}</span>
+                                <p>{% translate 'Xodimlar' %}</p>
+                            </div>
+                        </div>
+                        <!-- End Single Fun -->
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <!-- Start Single Fun -->
+                        <div class="single-fun">
+                            <i class="icofont icofont-table"></i>
+                            <div class="content">
+                                <span class="counter">{{ statistic.s_partners }}</span>
+                                <p>{% translate 'Xamkorlar' %}</p>
+                            </div>
+                        </div>
+                        <!-- End Single Fun -->
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <!-- Start Single Fun -->
+                        <div class="single-fun">
+                            <i class="icofont-simple-smile"></i>
+                            <div class="content">
+                                <span class="counter">{{ statistic.s_treateds }}</span>
+                                <p>{% translate 'Davolangan bemorlar' %}</p>
+                            </div>
+                        </div>
+                        <!-- End Single Fun -->
+                    </div>
+
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+    <!--/ End Fun-facts -->
+
+    <!-- Start service -->
+    <section class="services section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>{% translate 'Markazning asosiy yo‘nalishlari:' %}</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Service -->
+                    <div class="single-service">
+                        <i class="icofont icofont-prescription"></i>
+                        <h4><a href="">{% translate 'Zamonaviy diagnostika' %}</a></h4>
+                        <p>{% translate 'Allergik kasalliklarni aniqlashda ultrazamonaviy biologik mikrochiplardan foydalanish' %}</p>
+                    </div>
+                    <!-- End Single Service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Service -->
+                    <div class="single-service">
+                        <i class="icofont icofont-atom"></i>
+                        <h4><a href="">{% translate 'Aeroallergen monitoringi' %}</a></h4>
+                        <p>{% translate 'Aholini xabardor qilish maqsadida o‘simliklarning changlanish prognozini ishlab chiqish' %}</p>
+                    </div>
+                    <!-- End Single Service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Service -->
+                    <div class="single-service">
+                        <i class="icofont-fast-food"></i>
+                        <h4><a href="">{% translate 'Oziq-ovqat xavfsizligi' %}</a></h4>
+                        <p>{% translate 'Allergiya qo‘zg‘atuvchi mahsulotlarni belgilash bo‘yicha xalqaro standartlarga mos tamg‘alash tizimini joriy etish' %}</p>
+                    </div>
+                    <!-- End Single Service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Service -->
+                    <div class="single-service">
+                        <i class="icofont-microscope"></i>
+                        <h4><a href="">{% translate 'Ilmiy tadqiqotlar' %}</a></h4>
+                        <p>{% translate 'Molekulyar allergologiya yo‘nalishida tadqiqotlar olib borish va innovatsiyalarni amaliyotga tatbiq etish' %}</p>
+                    </div>
+                    <!-- End Single Service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Service -->
+                    <div class="single-service">
+                        <i class="icofont-hat"></i>
+                        <h4><a href="">{% translate 'Mutaxassislar tayyorlash' %}</a></h4>
+                        <p>{% translate 'Allergologiya sohasida shifokorlarning malakasini oshirish va qayta tayyorlash' %}</p>
+                    </div>
+                    <!-- End Single Service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Start Single Service -->
+                    <div class="single-service">
+                        <i class="icofont-handshake-deal"></i>
+                        <h4><a href="">{% translate 'Xalqaro hamkorlik' %}</a></h4>
+                        <p>{% translate 'Yetakchi xorijiy ekspertlar bilan hamkorlikda innovatsion loyihalar amalga oshirish' %}</p>
+                    </div>
+                    <!-- End Single Service -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ End service -->
+
+    <!-- Start Call to action -->
+    <section class="call-action overlay" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="content">
+                        <h2>{% translate 'Murojaat uchun info@icma.uz' %}</h2>
+                        <p>{% translate 'Ushbu pochta orqali taklif va shikoyatlar bilan murojaat qilishingiz mumkin.' %}</p>
+                        <div class="button">
+                            <a href="{% url 'contact_us' %}" class="btn">{% translate 'Biz bilan aloqa' %}</a>
+                            <a href="{% url 'about_center' %}" class="btn second">{% translate 'Biz haqimizda' %}<i
+                                    class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ End Call to action -->
+
+    <!-- Maqolalar -->
+    <section class="blog section" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>{% translate "So'ngi maqolalar" %}</h2>
+
+                        <p>{% translate 'Markazimiz sizni allergologiya va immunologiya soxasida qiziqarli va so`nggi ma`lumotlar bilan tanishtirib boradi! ' %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-2 row-cols-md-3 g-4">
+                {% for article in articles %}
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-news">
+                            <div class="news-head">
+                                <img class="" src="{{ article.a_article_img.url }}" alt="#">
+                            </div>
+                            <div class="news-body">
+                                <div class="news-content">
+                                    <div class="d-flex justify-content-between align-content-center">
+                                        <span class="date">{{ article.a_date|date:"d.m.Y" }}</span>
+                                        <span class="date pt-1"
+                                              style="font-size: 14px; background: none; color: #1A76D1;"><i
+                                                class="bi bi-eye"
+                                                style="padding-right: 6px"></i>{{ article.a_view_counter }}</span>
+                                    </div>
+                                    <h2><a href="{% url 'articles_detail' id=article.id %}">{{ article.a_header }}</a>
+                                    </h2>
+                                    <p class="text">{{ article.a_paragraph|truncatechars_html:77|safe }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- Maqolalar -->
+
+    <!-- Xamkorlar -->
+    <div class="clients overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="owl-carousel clients-slider">
+                        <div class="single-clients">
+                            <img src="{% static 'main/img/client6.png' %}" alt="#">
+                        </div>
+                        <div class="single-clients">
+                            <img src="{% static 'main/img/client7.png' %}" alt="#">
+                        </div>
+                        <div class="single-clients">
+                            <img src="{% static 'main/img/client5.png' %}" alt="#">
+                        </div>
+                        <div class="single-clients">
+                            <img src="{% static 'main/img/client6.png' %}" alt="#">
+                        </div>
+                        <div class="single-clients">
+                            <img src="{% static 'main/img/client7.png' %}" alt="#">
+                        </div>
+                        <div class="single-clients">
+                            <img src="{% static 'main/img/client5.png' %}" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Xamkorlar -->
+
+    <!-- Foto galereya -->
+    <section class="portfolio section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>{% translate 'Fotogalereya' %}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-12">
+                    <div class="owl-carousel portfolio-slider">
+
+                        {% for photo in photo_gallery %}
+
+                            <div class="single-pf">
+                                <img src="{{ photo.photo.url }}" alt="#">
+                            </div>
+
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Foto galereta -->
+
+{% endblock body %}

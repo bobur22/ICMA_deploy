@@ -1,0 +1,75 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+
+    <!--/bo'lim uchun nom -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>{% trans 'Korrupsiyaga qarshi kurashish' %}</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'about_center' %}">{% trans 'Markaz' %}</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li><a href="{% url 'corruption' %}">{% trans 'Korrupsiya' %}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Bo'lim uchun nom -->
+
+    <div class="service-details-area section pb-0">
+        <div class="container">
+            <div class="services-details-img">
+                <img src="{% static 'main/img/Korrupsiya.jpg' %}" alt="#">
+            </div>
+        </div>
+    </div>
+
+    <section class="faq-area section pt-0">
+
+        <div class="container">
+            <div class="row faq-wrap">
+                <div class="col-lg-12">
+                    <div class="faq-head">
+                        <h2>{% trans 'Korrupsiyaga qarshi kurashish' %}</h2>
+                    </div>
+                    <div class="faq-item">
+                        <ul class="accordion">
+                            <li class="wow fadeInUp" data-wow-delay="0.6s"
+                                style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                                <a class="">{% trans 'Aloqa kanallari' %}</a>
+                                <p style="display: none;">{% trans 'Xalqaro molekulyar allergologiya markazida korrupsiya holatlari sodir etilganligi boʻyicha xabar berish uchun <br><br> Aloqa Kanalari<br> Markaz ishonch telefoni +998 55 514 34 94<br> Telegram messenjeridagi telegram-bot @icma_anticorruption_bot' %}</p>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.6s"
+                                style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                                <a class="">{% trans 'Korrupsiyaga qarshi kurashish bo‘yicha idoraviy hujjatlar' %}</a>
+                                <p style="display: none;">
+                                    {% for corruption in corruptions %}
+
+                                        <object data="{{ corruption.c_corrupt_file.url }}" type="application/pdf"
+                                                width="100%"
+                                                height="800px">
+                                            <p>{% trans 'PDF formatini ko‘rsatib bo‘lmadi.' %}<a
+                                                    href="{{ corruptions.c_corrupt_file.url }}">
+                                                {% trans "Buning o‘rniga yuklab oling." %}</a>
+                                            </p>
+                                        </object>
+
+                                    {% endfor %}
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+{% endblock body %}

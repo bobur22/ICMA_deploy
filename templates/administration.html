@@ -1,0 +1,93 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+
+    <!--/bo'lim uchun nom -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>{% trans 'Rahbariyat' %}</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'about_center' %}">{% trans 'Markaz' %}</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li><a href="{% url 'administrarion' %}">{% trans 'Rahbariyat' %}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Bo'lim uchun nom -->
+
+    <div class="doctor-details-area section">
+        <div class="container">
+            <div class="row">
+                {% for d in director %}
+
+                    <div class="col-lg-5">
+                        <div class="doctor-details-item doctor-details-left">
+                            <img src="{{ d.director_img.url }}" alt="#">
+                            <div class="doctor-details-contact">
+                                <h3>{% translate 'Aloqa' %}</h3>
+                                <ul class="basic-info">
+                                    <li>
+                                        <a href="tel:{{ d.p_number }}">
+                                            <i class="icofont-ui-call"></i>
+                                            Call : {{ d.p_number }}
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:{{ d.email }}">
+                                            <i class="icofont-ui-message"></i>
+                                            {{ d.email }}
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="doctor-details-work">
+                                    <h3>{% translate 'Ishlash vaqtlari:' %}</h3>
+                                    <ul class="time-sidual">
+                                        <li class="day">
+                                            {% translate 'Juma:' %} <span>09:00 - 18:00</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="doctor-details-item">
+                            <div class="doctor-details-right">
+                                <div class="doctor-name">
+                                    <h3 class="name">
+                                        {{ d.full_name }}
+                                    </h3>
+                                    <p class="deg"></p>
+                                    <p class="degree">{% translate 'Xalqaro molekulyar allergologiya markazi direktori' %}</p>
+                                </div>
+                                <div class="doctor-details-biography">
+                                    <h3>{% translate 'Tarjimai holi:' %}</h3>
+                                    <p>
+                                        {{ d.biography }}
+                                    </p>
+                                </div>
+                                <div class="doctor-details-biography">
+                                    <h3>{% translate 'Majburiyati:' %}</h3>
+                                    <p>
+                                        {{ d.responsibility }}
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}

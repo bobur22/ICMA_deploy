@@ -1,0 +1,16 @@
+#jazzy-logo > img {
+    border-radius: 0px;
+}
+
+.jazzmin-login-page > .login-box > .login-logo > h1 {
+    background-color: black;
+}
+
+.jazzmin-login-page > .login-box > .login-logo > h1 > picture > img {
+    width: 300px;
+}
+
+
+#jazzy-sidebar {
+    background-color: rgb(26, 26, 26);
+}

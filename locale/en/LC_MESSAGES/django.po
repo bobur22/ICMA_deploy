@@ -1,0 +1,2235 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-10 20:34+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: config_/settings.py:132
+msgid "O'zbek"
+msgstr "Uzbek"
+
+#: config_/settings.py:133
+msgid "Русский"
+msgstr "Russian"
+
+#: config_/settings.py:134
+msgid "English"
+msgstr "English"
+
+#: icma/models.py:13
+msgid "Pasport raqami aniq 7 ta harf yoki raqamdan iborat bo‘lishi kerak."
+msgstr "The passport number must consist of exactly 7 letters or digits."
+
+#: icma/models.py:18
+msgid "toliq_ism"
+msgstr "full_name"
+
+#: icma/models.py:19
+msgid "Iltimos, rahbarning to‘liq ism-sharifini kiriting!"
+msgstr "Please enter the full name of the director!"
+
+#: icma/models.py:23
+msgid "telefon_raqam"
+msgstr "phone_number"
+
+#: icma/models.py:24
+msgid "Iltimos, direktorning telefon raqamini kiriting. Masalan: +998123456789"
+msgstr "Please enter the director's phone number. Example: +998123456789"
+
+#: icma/models.py:25
+msgid "Iltimos, to‘g‘ri telefon raqamini kiriting!"
+msgstr "Please enter a valid phone number!"
+
+#: icma/models.py:26 templates/passport.html:50
+msgid "pochta"
+msgstr "email"
+
+#: icma/models.py:27
+msgid "Iltimos, Email manzilingizni kiriting."
+msgstr "Please enter your email address."
+
+#: icma/models.py:29
+msgid "Iltimos, direktorning biografiyasini kiriting."
+msgstr "Please enter the director's biography."
+
+#: icma/models.py:30
+msgid "biografiya"
+msgstr "biography"
+
+#: icma/models.py:32
+msgid "majburiyati"
+msgstr "responsibility"
+
+#: icma/models.py:33
+msgid "Iltimos, direktorning majburiyatlarini kiriting."
+msgstr "Please enter the director's responsibilities."
+
+#: icma/models.py:35
+msgid "rahbar_rasmi"
+msgstr "director_photo"
+
+#: icma/models.py:37
+msgid "Iltimos, direktorning fotosuratini yuklang (.jpg, .jpeg, .png formatlarida)!"
+msgstr "Please upload a photo of the director (.jpg, .jpeg, .png formats)!"
+
+#: icma/models.py:38 icma/models.py:58 icma/models.py:79 icma/models.py:101
+#: icma/models.py:119 icma/models.py:147 icma/models.py:240 icma/models.py:256
+msgid "yaratilgan vaqti"
+msgstr "created at"
+
+#: icma/models.py:39 icma/models.py:59 icma/models.py:80 icma/models.py:102
+#: icma/models.py:120 icma/models.py:148 icma/models.py:241 icma/models.py:257
+msgid "o'zgartirilgan vaqti"
+msgstr "updated at"
+
+#: icma/models.py:50
+msgid "xodimning toliq ism"
+msgstr "employee full name"
+
+#: icma/models.py:51
+msgid "Iltimos, xodimning to‘liq ismini kiriting."
+msgstr "Please enter the employee's full name."
+
+#: icma/models.py:53
+msgid "xodimning mutaxassisligi"
+msgstr "employee's specialty"
+
+#: icma/models.py:54
+msgid "Iltimos, xodimning mutaxassisligini kiriting."
+msgstr "Please enter the employee's specialty."
+
+#: icma/models.py:55
+msgid "xodimning surati"
+msgstr "employee photo"
+
+#: icma/models.py:56
+msgid "Iltimos, xodimning fotosuratini yuklang (.jpg, .jpeg, .png formatlarida)!"
+msgstr "Please upload a photo of the employee (.jpg, .jpeg, .png formats)!"
+
+#: icma/models.py:70
+msgid "yangilik sarlavhasi"
+msgstr "news title"
+
+#: icma/models.py:71
+msgid "Iltimos, yangilik sarlavhasini kiriting."
+msgstr "Please enter the news title."
+
+#: icma/models.py:72
+msgid "yangilik matni"
+msgstr "news content"
+
+#: icma/models.py:72
+msgid "Iltimos, yangilik matnini kiriting."
+msgstr "Please enter the news content."
+
+#: icma/models.py:73
+msgid "yangilik sanasi"
+msgstr "news date"
+
+#: icma/models.py:74
+msgid "Iltimos, yangilik sanasini kiriting."
+msgstr "Please enter the news date."
+
+#: icma/models.py:75
+msgid "yangilik ko'rishlar soni"
+msgstr "news view count"
+
+#: icma/models.py:76
+msgid "yangilik rasmi"
+msgstr "news image"
+
+#: icma/models.py:77
+msgid "Iltimos, fotosurat yuklang (.jpg, .jpeg, .png formatlarida)!"
+msgstr "Please upload a photo (.jpg, .jpeg, .png formats)!"
+
+#: icma/models.py:91
+msgid "maqola sarlavhasi"
+msgstr "article title"
+
+#: icma/models.py:92
+msgid "Iltimos, maqola sarlavhasini kiriting."
+msgstr "Please enter the article title."
+
+#: icma/models.py:93
+msgid "maqola matni"
+msgstr "article content"
+
+#: icma/models.py:94
+msgid "Iltimos, maqola matnini kiriting."
+msgstr "Please enter the article content."
+
+#: icma/models.py:95
+msgid "maqola sanasi"
+msgstr "article date"
+
+#: icma/models.py:96
+msgid "Iltimos, maqola sanasini kiriting."
+msgstr "Please enter the article date."
+
+#: icma/models.py:97
+msgid "maqola ko'rishlar soni"
+msgstr "article view count"
+
+#: icma/models.py:98
+msgid "maqola rasmi"
+msgstr "article image"
+
+#: icma/models.py:99 icma/models.py:232 icma/models.py:235 icma/models.py:238
+msgid "Iltimos, rasm yuklang (.jpg, .jpeg, .png formatlarida)!"
+msgstr "Please upload an image (.jpg, .jpeg, .png formats)!"
+
+#: icma/models.py:113
+msgid "infroni surati"
+msgstr "infrastructure photo"
+#: icma/models.py:114
+msgid "Iltimos, rasmingizni yuklang!"
+msgstr "Please upload your image!"
+
+#: icma/models.py:115
+msgid "infrotuzilma sarlavhasi"
+msgstr "infrastructure title"
+
+#: icma/models.py:116
+msgid "Iltimos, infrotuzilma sarlavhasini kiriting."
+msgstr "Please enter the infrastructure title."
+
+#: icma/models.py:117
+msgid "infrotuzilma matni"
+msgstr "infrastructure text"
+
+#: icma/models.py:118
+msgid "Iltimos, infrotuzilma matnini kiriting."
+msgstr "Please enter the infrastructure text."
+
+#: icma/models.py:133
+msgid "monitoring sarlavhasi"
+msgstr "monitoring title"
+
+#: icma/models.py:134
+msgid "Iltimos, monitoring sarlavhasini kiriting."
+msgstr "Please enter the monitoring title."
+
+#: icma/models.py:135
+msgid "monitoring matni"
+msgstr "monitoring text"
+
+#: icma/models.py:136
+msgid "Iltimos, monitoring matnini kiriting."
+msgstr "Please enter the monitoring text."
+
+#: icma/models.py:137
+msgid "monitoring sanasi"
+msgstr "monitoring date"
+
+#: icma/models.py:138
+msgid "Iltimos, monitoring sanasini kiriting."
+msgstr "Please enter the monitoring date."
+
+#: icma/models.py:139
+msgid "monitoring ko'rishlar soni"
+msgstr "monitoring view count"
+
+#: icma/models.py:140
+msgid "holati"
+msgstr "status"
+
+#: icma/models.py:141
+msgid "Iltimos, kartaning holatini kiriting."
+msgstr "Please enter the status of the card."
+
+#: icma/models.py:142
+msgid "monitoring rasmi"
+msgstr "monitoring image"
+
+#: icma/models.py:143
+msgid "Iltimos, monitoring uchun rasm yuklang (.jpg, .jpeg, .png formatlarida)!"
+msgstr "Please upload an image for monitoring (.jpg, .jpeg, .png formats)!"
+
+#: icma/models.py:145
+msgid "monitoring fayli"
+msgstr "monitoring file"
+
+#: icma/models.py:146 icma/models.py:254
+msgid "Iltimos, faylingizni yuklang!"
+msgstr "Please upload your file!"
+
+#: icma/models.py:159
+msgid "Pasport egasining ismi"
+msgstr "Passport holder's name"
+
+#: icma/models.py:160
+msgid "Iltimos, pasport egasining ismini kiriting."
+msgstr "Please enter the passport holder's name."
+
+#: icma/models.py:161
+msgid "Pasport kodi"
+msgstr "Passport code"
+
+#: icma/models.py:162
+msgid "Iltimos, pasport kodini kiriting."
+msgstr "Please enter the passport code."
+
+#: icma/models.py:164
+msgid "Email manzili"
+msgstr "Email address"
+
+#: icma/models.py:165 icma/models.py:187
+msgid "Iltimos, email manzilingizni kiriting."
+msgstr "Please enter your email address."
+
+#: icma/models.py:167 templates/passport.html:60
+msgid "Berilgan sana"
+msgstr "Issued date"
+
+#: icma/models.py:168
+msgid "Iltimos, pasport berilgan sanani kiriting."
+msgstr "Please enter the passport issued date."
+
+#: icma/models.py:170
+msgid "Pasport rasmi"
+msgstr "Passport image"
+
+#: icma/models.py:171
+msgid "Iltimos, pasport rasmini yuklang."
+msgstr "Please upload the passport image."
+
+#: icma/models.py:172 icma/models.py:197 icma/models.py:215
+msgid "Yaratilgan vaqti"
+msgstr "Created time"
+
+#: icma/models.py:173 icma/models.py:198 icma/models.py:216
+msgid "O‘zgartirilgan vaqti"
+msgstr "Modified time"
+
+#: icma/models.py:184
+msgid "toliq ism"
+msgstr "full name"
+
+#: icma/models.py:185
+msgid "Iltimos, to‘liq ismingizni kiriting."
+msgstr "Please enter your full name."
+
+#: icma/models.py:186
+msgid "pochta manzili"
+msgstr "postal address"
+
+#: icma/models.py:189
+msgid "Telefon raqami"
+msgstr "Phone number"
+
+#: icma/models.py:190
+msgid "Iltimos, telefon raqamingizni kiriting. Masalan: +998123456789"
+msgstr "Please enter your phone number. Example: +998123456789"
+
+#: icma/models.py:191
+msgid "Iltimos, to‘g‘ri telefon raqamini kiriting."
+msgstr "Please enter a valid phone number."
+
+#: icma/models.py:193 templates/contact_us.html:86
+msgid "Mavzu"
+msgstr "Subject"
+
+#: icma/models.py:194
+msgid "Iltimos, xabaringiz mavzusini kiriting."
+msgstr "Please enter the subject of your message."
+
+#: icma/models.py:195
+msgid "Xabar matni"
+msgstr "Message text"
+
+#: icma/models.py:196
+msgid "Iltimos, xabaringizni shu yerga yozing."
+msgstr "Please write your message here."
+
+#: icma/models.py:209
+msgid "statistika xodimlar"
+msgstr "statistics staff"
+
+#: icma/models.py:210
+msgid "Iltimos, xodimlar sonini kiriting."
+msgstr "Please enter the number of staff."
+
+#: icma/models.py:211
+msgid "statistika xamkorlar"
+msgstr "statistics partners"
+
+#: icma/models.py:212
+msgid "Iltimos, Xamkorlar sonini kiriting."
+msgstr "Please enter the number of partners."
+
+#: icma/models.py:213
+msgid "statistika davolanganlar"
+msgstr "statistics treated"
+
+#: icma/models.py:214
+msgid "Iltimos, Davolanganlar sonini kiriting."
+msgstr "Please enter the number of treated individuals."
+
+#: icma/models.py:227
+msgid "markaz sarlavhasi"
+msgstr "center title"
+
+#: icma/models.py:228
+msgid "Iltimos, markaz sarlavhasini kiriting."
+msgstr "Please enter the center title."
+
+#: icma/models.py:229
+msgid "markaz matni"
+msgstr "center text"
+
+#: icma/models.py:230
+msgid "Iltimos, markaz matnini kiriting."
+msgstr "Please enter the center text."
+
+#: icma/models.py:231 icma/models.py:234 icma/models.py:237
+msgid "markaz rasmi"
+msgstr "official photo of the center"
+
+#: icma/models.py:253
+msgid "korrupsiya fayli"
+msgstr "corruption file"
+
+#: icma/validators.py:14
+#: venv/lib/python3.13/site-packages/django/core/validators.py:227
+msgid "Enter a valid email address."
+msgstr "Enter a valid email address."
+
+#: icma/validators.py:26
+msgid "Enter a valid full name.(without numbers)"
+msgstr "Enter a valid full name (without numbers)."
+
+#: icma/validators.py:28
+msgid "Enter a valid full name that contains first name and last name"
+msgstr "Enter a valid full name that contains both first and last name."
+
+#: icma/validators.py:55
+msgid "The value entered is not a phone number."
+msgstr "The value entered is not a phone number."
+
+#: templates/404.html:13
+msgid "Xatolik."
+msgstr "ERROR."
+
+#: templates/page_development.html:13
+msgid "Ushbu sahifa hali ishlab chiqilmoqda."
+msgstr "This page is on development."
+
+#: templates/page_development.html:15
+msgid "Uyga qaytish."
+msgstr "Go back to home"
+
+#: templates/about_center.html:13
+msgid "Markaz Haqida"
+msgstr "About the Center"
+
+#: templates/about_center.html:15 templates/administration.html:15
+#: templates/articles.html:15 templates/contact_us.html:31
+#: templates/corruption.html:15 templates/employees.html:15
+#: templates/infrostructure.html:15 templates/layouts/footer.html:28
+#: templates/layouts/navbar.html:14 templates/layouts/navbar.html:88
+msgid "Markaz"
+msgstr "Center"
+
+#: templates/about_center.html:17 templates/layouts/navbar.html:92
+msgid "Markaz haqida"
+msgstr "About the center"
+
+#: templates/administration.html:13 templates/administration.html:17
+#: templates/layouts/footer.html:29 templates/layouts/navbar.html:95
+msgid "Rahbariyat"
+msgstr "Administration"
+
+#: templates/administration.html:35 templates/contact_us.html:29
+#: templates/index.html:60 templates/layouts/navbar.html:134
+msgid "Aloqa"
+msgstr "Contact"
+
+#: templates/administration.html:51
+msgid "Ishlash vaqtlari:"
+msgstr "Working hours:"
+
+#: templates/administration.html:54 templates/layouts/footer.html:43
+msgid "Juma"
+msgstr "Friday:"
+
+#: templates/administration.html:69
+msgid "Xalqaro molekulyar allergologiya markazi direktori"
+msgstr "Director of the International Molecular Allergology Center"
+
+#: templates/administration.html:72
+msgid "Tarjimai holi:"
+msgstr "Biography:"
+
+#: templates/administration.html:78
+msgid "Majburiyati:"
+msgstr "Responsibilities:"
+
+#: templates/articles.html:13 templates/articles.html:17
+#: templates/articles_detail.html:15 templates/layouts/navbar.html:101
+msgid "Maqolalar"
+msgstr "Articles"
+
+#: templates/contact_us.html:59
+msgid "Biz bilan bog'laning"
+msgstr "Contact us"
+
+#: templates/contact_us.html:60
+msgid "Agar sizda biron bir savol bo'lsa, biz bilan bog'laning."
+msgstr "If you have any questions, contact us."
+
+#: templates/contact_us.html:67
+msgid "Ismingiz"
+msgstr "Your name"
+
+#: templates/contact_us.html:73
+msgid "Pochta"
+msgstr "Email"
+
+#: templates/contact_us.html:80
+msgid "Telefon"
+msgstr "Phone"
+
+#: templates/contact_us.html:92
+msgid "Xabaringiz"
+msgstr "Your message"
+
+#: templates/contact_us.html:98
+msgid "Yuborish"
+msgstr "Send"
+
+#: templates/contact_us.html:103
+msgid ""
+"\n"
+"                                                    Obuna bo'lishni "
+"xohlaysizmi ?\n"
+"                                                "
+msgstr
+"\n"
+"                                                    Would you like to"
+"subscribe?\n"
+"                                                "
+
+#: templates/contact_us.html:134
+msgid "TashMI-2"
+msgstr "TashMI-2"
+
+#: templates/contact_us.html:135
+msgid "Soglom avlod ko'chasi"
+msgstr "Healthy Generation Street"
+
+#: templates/contact_us.html:146
+msgid "Shanba Yakshanba dam olish kuni"
+msgstr "Saturday and Sunday are days off"
+
+#: templates/corruption.html:13 templates/corruption.html:40
+msgid "Korrupsiyaga qarshi kurashish"
+msgstr "Combating Corruption"
+
+#: templates/corruption.html:17 templates/layouts/footer.html:32
+#: templates/layouts/navbar.html:107
+msgid "Korrupsiya"
+msgstr "Corruption"
+
+#: templates/corruption.html:46
+msgid "Aloqa kanallari"
+msgstr "Contact Channels"
+
+#: templates/corruption.html:48
+msgid "Xalqaro molekulyar allergologiya markazida korrupsiya holatlari sodir etilganligi boʻyicha xabar berish uchun <br>\n<br>\n Aloqa Kanalari<br>\n Markaz ishonch telefoni +998 55 514 34 94<br>\n Telegram messenjeridagi telegram-bot @icma_anticorruption_bot"
+msgstr "To report corruption incidents at the International Molecular Allergology Center:<br>\n<br>\n Contact Channels:<br>\n Center's hotline: +998 55 514 34 94<br>\n Telegram bot: @icma_anticorruption_bot"
+
+#: templates/corruption.html:61
+msgid "Korrupsiyaga qarshi kurashish bo‘yicha idoraviy hujjatlar"
+msgstr "Internal documents on combating corruption"
+
+#: templates/corruption.html:68 templates/monitoring_detail.html:30
+#: templates/passport.html:77
+msgid "PDF formatini ko‘rsatib bo‘lmadi."
+msgstr "Could not display the PDF format."
+
+#: templates/corruption.html:69 templates/monitoring_detail.html:31
+#: templates/passport.html:79
+msgid "Buning o‘rniga yuklab oling."
+msgstr "Please download it instead."
+
+#: templates/employees.html:13 templates/employees.html:17
+#: templates/index.html:206 templates/layouts/navbar.html:104
+msgid "Xodimlar"
+msgstr "Employees"
+
+#: templates/index.html:33
+msgid ""
+"\n"
+"                                        Xalqaro <span>Molekulyar </"
+"span>Allergologiya <span>Markazi </span>\n"
+"                                    "
+msgstr ""
+"\n"
+"International <span>Molecular</span> Allergology <span>Center</span>\n"
+"                                    "
+
+#: templates/index.html:37
+msgid "Innovatsion rivojlanish agentligi huzuridagi"
+msgstr "Under the Agency for Innovative Development"
+
+#: templates/index.html:39 templates/index.html:321
+#: templates/layouts/footer.html:12
+msgid "Biz haqimizda"
+msgstr "About us"
+
+#: templates/index.html:54
+msgid ""
+"\n"
+"                                        Agar sizda <span>allergik </"
+"span>kasallik bo'lsa <span>davolaymiz!</span>\n"
+"                                    "
+msgstr ""
+"\n"
+"If you have an <span>allergic</span> condition, we will <span>treat</span> it!\n"
+"                                    "
+
+#: templates/index.html:58
+msgid ""
+"Bizning markazimizda quyidagi kasalliklar bilan og`rigan bemorlarga yuqori "
+"texnologik tekshiruvlar qilinadi va ambulator yoki statsionar sharoitda "
+"davolanadi. "
+msgstr ""
+"In our center, patients suffering from the following diseases undergo high-tech examinations and receive outpatient or inpatient treatment."
+
+#: templates/index.html:75
+msgid ""
+"\n"
+"                                        <span>Har haftalik </"
+"span>Aeromonitoring <span></span>natijalari\n"
+"                                    "
+msgstr ""
+"\n"
+"                                        <span>Weekly </"
+"span>Aeromonitoring <span></span>results\n"
+"                                    "
+
+#: templates/index.html:79
+msgid ""
+"Biz har hafta havodagi gul changi miqdorini Aeromonitoring natijalariga "
+"asoslanib baholaymiz va aholiga muntazam ravishda ma'lumot beramiz."
+msgstr ""
+"Every week, we assess the amount of pollen in the air based on the Aeromonitoring results and provide regular updates to the public."
+
+#: templates/index.html:82
+msgid "Aeromonitoring natijalari"
+msgstr "Aeromonitoring Results"
+
+#: templates/index.html:107
+msgid "Ambulator xizmat"
+msgstr "Outpatient Service"
+
+#: templates/index.html:108
+msgid ""
+"Zamonaviy uskunalar yordamida tashxis qo‘yish va davolash bo‘yicha xizmat ko‘rsatadigan ambulatoriya."
+msgstr ""
+"Outpatient service that provides diagnostics and treatment using modern equipment."
+
+#: templates/index.html:121
+msgid "Laboratoriya xizmati"
+msgstr "Laboratory Service"
+
+#: templates/index.html:122
+msgid ""
+"Kasalliklar diagnostikasi uchun tekshiruvlarni amalga oshiradigan zamonaviy "
+"laboratoriya"
+msgstr "A modern laboratory that conducts tests for disease diagnostics is equipped with advanced technology. "
+
+#: templates/index.html:136 templates/layouts/footer.html:40
+msgid "Ish vaqti"
+msgstr "Working Hours"
+
+#: templates/index.html:138
+msgid "Dushanba - Juma"
+msgstr "Monday - Friday"
+
+#: templates/index.html:139
+msgctxt "index"
+msgid "Shanba"
+msgstr "Saturday"
+
+#: templates/index.html:140
+msgctxt "index_date_sun"
+msgid "Yakshanba"
+msgstr "Sunday"
+
+#: templates/index.html:159
+msgid "So'nggi ma'lumotlar va yangiliklar"
+msgstr "Latest Information and News"
+
+#: templates/index.html:217
+msgid "Xamkorlar"
+msgstr "Partners"
+
+#: templates/index.html:228
+msgid "Davolangan bemorlar"
+msgstr "Treated Patients"
+
+#: templates/index.html:247
+msgid "Markazning asosiy yo‘nalishlari:"
+msgstr "Main Directions of the Center:"
+
+#: templates/index.html:256
+msgid "Zamonaviy diagnostika"
+msgstr "Modern Diagnostics"
+
+#: templates/index.html:257
+msgid ""
+"Allergik kasalliklarni aniqlashda ultrazamonaviy biologik mikrochiplardan "
+"foydalanish"
+msgstr "Using cutting-edge biological microchips to detect allergic diseases."
+
+#: templates/index.html:265
+msgid "Aeroallergen monitoringi"
+msgstr "Aeroallergen Monitoring"
+
+#: templates/index.html:266
+msgid ""
+"Aholini xabardor qilish maqsadida o‘simliklarning changlanish prognozini "
+"ishlab chiqish"
+msgstr "Developing a pollen forecast for informing the population."
+
+#: templates/index.html:274
+msgid "Oziq-ovqat xavfsizligi"
+msgstr "Food Safety"
+
+#: templates/index.html:275
+msgid ""
+"Allergiya qo‘zg‘atuvchi mahsulotlarni belgilash bo‘yicha xalqaro "
+"standartlarga mos tamg‘alash tizimini joriy etish"
+msgstr "Implementing an international labeling system to identify allergy-inducing products."
+
+#: templates/index.html:283
+msgid "Ilmiy tadqiqotlar"
+msgstr "Scientific Research"
+
+#: templates/index.html:284
+msgid ""
+"Molekulyar allergologiya yo‘nalishida tadqiqotlar olib borish va "
+"innovatsiyalarni amaliyotga tatbiq etish"
+msgstr "Conducting research in the field of molecular allergology and applying innovations in practice."
+
+#: templates/index.html:292
+msgid "Mutaxassislar tayyorlash"
+msgstr "Specialist Training"
+
+#: templates/index.html:293
+msgid ""
+"Allergologiya sohasida shifokorlarning malakasini oshirish va qayta "
+"tayyorlash"
+msgstr "Enhancing the qualifications and retraining of doctors in the field of allergology."
+
+#: templates/index.html:301
+msgid "Xalqaro hamkorlik"
+msgstr "International Cooperation"
+
+#: templates/index.html:302
+msgid ""
+"Yetakchi xorijiy ekspertlar bilan hamkorlikda innovatsion loyihalar amalga "
+"oshirish"
+msgstr "Implementing innovative projects in cooperation with leading foreign experts."
+
+#: templates/index.html:317
+msgid "Murojaat uchun info@icma.uz"
+msgstr "For inquiries, email info@icma.uz"
+
+#: templates/index.html:318
+msgid ""
+"Ushbu pochta orqali taklif va shikoyatlar bilan murojaat qilishingiz mumkin."
+msgstr "You can contact us with suggestions and complaints through this email."
+
+#: templates/index.html:320
+msgid "Biz bilan aloqa"
+msgstr "Contact Us"
+
+#: templates/index.html:337
+msgid "So'ngi maqolalar"
+msgstr "Latest Articles"
+
+#: templates/index.html:339
+msgid ""
+"Markazimiz sizni allergologiya va immunologiya soxasida qiziqarli va so`nggi "
+"ma`lumotlar bilan tanishtirib boradi! "
+msgstr ""
+"Our center regularly shares the latest and most interesting information in the field of allergology and immunology."
+
+#: templates/index.html:412
+msgid "Fotogalereya"
+msgstr "Photo Gallery"
+
+#: templates/infrostructure.html:13 templates/infrostructure.html:17
+msgctxt "infrostructure_page"
+msgid "Infrotuzilma"
+msgstr "Infrastructure"
+
+#: templates/layouts/footer.html:13
+msgid ""
+"Innovatsion rivojlanish agentligi huzuridagi Xalqaro molekulyar "
+"allergologiya markazi"
+msgstr "Innovative Development Agency under the International Molecular Allergology Center"
+
+#: templates/layouts/footer.html:24
+msgid "Foydali havolalar"
+msgstr "Useful Links"
+
+#: templates/layouts/footer.html:30
+msgctxt "footer"
+msgid "infratuzilma"
+msgstr "Infrastructure"
+
+#: templates/layouts/footer.html:31
+msgid "Xodimolar"
+msgstr "Employees"
+
+#: templates/layouts/footer.html:51
+msgid "Bog'lanish"
+msgstr "Contact"
+
+#: templates/layouts/footer.html:53
+msgid "Manzil: 954F+Q3Q, Тоshkent, Toshkent Viloyati, Oʻzbekiston"
+msgstr "Address: 954F+Q3Q, Tashkent, Tashkent Region, Uzbekistan"
+
+#: templates/layouts/footer.html:69
+msgid "Xalqaro molekulyar allergologiya markazi   |   Barcha huquqlar himoyalangan"
+msgstr "International Molecular Allergology Center   |   All Rights Reserved"
+
+#: templates/layouts/navbar.html:16
+msgid "Agentlik"
+msgstr "Agency"
+
+#: templates/layouts/navbar.html:18
+msgid "Davlat xizmatlari"
+msgstr "State Services"
+
+#: templates/layouts/navbar.html:25
+msgid "Telegram"
+msgstr "Telegram"
+
+#: templates/layouts/navbar.html:98
+msgctxt "navbar"
+msgid "Infratuzilma"
+msgstr "Infrastructure"
+
+#: templates/layouts/navbar.html:112 templates/news.html:13
+#: templates/news.html:15 templates/news_detail.html:15
+msgid "Yangiliklar"
+msgstr "News"
+
+#: templates/layouts/navbar.html:115 templates/monitoring.html:13
+#: templates/monitoring.html:15 templates/monitoring_detail.html:15
+msgid "Aeromonitoring"
+msgstr "Aeromonitoring"
+
+#: templates/layouts/navbar.html:118
+msgid "Xizmatlar"
+msgstr "Services"
+
+#: templates/layouts/navbar.html:122 templates/passport.html:13
+msgid "Allergiya pasporti"
+msgstr "Allergy Passport"
+
+#: templates/monitoring.html:30
+msgid ""
+"\n"
+"                                O‘zbekiston Respublikasi Prezidentining "
+"“Allergik kasalliklarning oldini olish va\n"
+"                                davolash\n"
+"                                sifatini oshirish chora-tadbirlari "
+"to‘g‘risida” 2023-yil 23-noyabrdagi PQ-371-sonli\n"
+"                                qarorning ijrosini ta’minlash maqsadida "
+"O‘zbekiston respublikasi shahar va viloyatlari\n"
+"                                kesimida 1m³ havoda allergen o‘simliklar "
+"gulchanglari va zamburug‘ sporalari tarqalishi\n"
+"                                monitoring natijalari\n"
+"                            "
+msgstr ""
+"\n"
+"The goal of ensuring the implementation of the Presidential Decree of the Republic of Uzbekistan “Measures to prevent and improve the quality of treatment of allergic diseases” (Decree No. PQ-371, November 23, 2023), is to monitor the spread of allergen plant pollen and fungal spores in 1m³ of air in cities and regions across Uzbekistan."
+"                            "
+
+#: templates/passport.html:15
+msgid "Passport"
+msgstr "Passport"
+
+#: templates/passport.html:35
+msgid "Malumotlarni yuklab olish"
+msgstr "Download Data"
+
+#: templates/passport.html:37
+msgid "Kartada ko'rsatilgan ma'lumotlarni kiriting"
+msgstr "Enter the information from your id card"
+
+#: templates/passport.html:45
+msgid "F.I.O."
+msgstr "Full Name"
+
+#: templates/passport.html:55
+msgid "Seriya raqami"
+msgstr "Series Number"
+
+#: templates/passport.html:65
+msgid "Yuklab olish"
+msgstr "Download"
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/forms.py:6
+msgid "Search files"
+msgstr "Search files"
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:5
+msgid "Select an image to embed"
+msgstr "Select an image to embed"
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:27
+msgid "Browse for the image you want, then click 'Embed Image' to continue..."
+msgstr "Browse for the image you want, then click 'Embed Image' to continue..."
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:29
+msgid ""
+"No images found. Upload images using the 'Image Button' dialog's 'Upload' "
+"tab."
+msgstr ""
+"No images found. Upload images using the 'Image Button' dialog's 'Upload' "
+"tab."
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:50
+msgid "Images in: "
+msgstr "Images in: "
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:62
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:80
+msgid "Embed Image"
+msgstr "Embed Image"
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:146
+msgid "Play Slideshow"
+msgstr "Play Slideshow"
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:147
+msgid "Pause Slideshow"
+msgstr "Pause Slideshow"
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:148
+msgid "&lsaquo; Previous Photo"
+msgstr "&lsaquo; Previous Photo"
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:149
+msgid "Next Photo &rsaquo;"
+msgstr "Next Photo &rsaquo;"
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:150
+msgid "Next &rsaquo;"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:151
+msgid "&lsaquo; Prev"
+msgstr "&lsaquo; Prev"
+
+#: venv/lib/python3.13/site-packages/django/contrib/messages/apps.py:16
+msgid "Messages"
+msgstr "Messages"
+
+#: venv/lib/python3.13/site-packages/django/contrib/sitemaps/apps.py:8
+msgid "Site Maps"
+msgstr "Site Maps"
+
+#: venv/lib/python3.13/site-packages/django/contrib/staticfiles/apps.py:9
+msgid "Static Files"
+msgstr "Static Files"
+
+#: venv/lib/python3.13/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr "Syndication"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: venv/lib/python3.13/site-packages/django/core/paginator.py:30
+msgid "…"
+msgstr "…"
+
+#: venv/lib/python3.13/site-packages/django/core/paginator.py:32
+msgid "That page number is not an integer"
+msgstr "That page number is not an integer"
+
+#: venv/lib/python3.13/site-packages/django/core/paginator.py:33
+msgid "That page number is less than 1"
+msgstr "That page number is less than 1"
+
+#: venv/lib/python3.13/site-packages/django/core/paginator.py:34
+msgid "That page contains no results"
+msgstr "That page contains no results"
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:22
+msgid "Enter a valid value."
+msgstr "Enter a valid value."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:70
+msgid "Enter a valid domain name."
+msgstr "Enter a valid domain name."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:155
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:768
+msgid "Enter a valid URL."
+msgstr "Enter a valid URL."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:216
+msgid "Enter a valid integer."
+msgstr "Enter a valid integer."
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: venv/lib/python3.13/site-packages/django/core/validators.py:310
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:318
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:330
+#: venv/lib/python3.13/site-packages/django/core/validators.py:339
+#: venv/lib/python3.13/site-packages/django/core/validators.py:353
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2215
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr "Enter a valid %(protocol)s address."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:332
+msgid "IPv4"
+msgstr "IPv4"
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:341
+#: venv/lib/python3.13/site-packages/django/utils/ipv6.py:43
+msgid "IPv6"
+msgstr "IPv6"
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:355
+msgid "IPv4 or IPv6"
+msgstr "IPv4 or IPv6"
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:396
+msgid "Enter only digits separated by commas."
+msgstr "Enter only digits separated by commas."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:402
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:437
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr "Ensure this value is less than or equal to %(limit_value)s."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:446
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr "Ensure this value is greater than or equal to %(limit_value)s."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:455
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr "Ensure this value is a multiple of step size %(limit_value)s."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:462
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:494
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgstr[1] ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:512
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgstr[1] ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:535
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:359
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:398
+msgid "Enter a number."
+msgstr "Enter a number."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:537
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] "Ensure that there are no more than %(max)s digit in total."
+msgstr[1] "Ensure that there are no more than %(max)s digits in total."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:542
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] "Ensure that there are no more than %(max)s decimal place."
+msgstr[1] "Ensure that there are no more than %(max)s decimal places."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:547
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgstr[1] ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:618
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+
+#: venv/lib/python3.13/site-packages/django/core/validators.py:680
+msgid "Null characters are not allowed."
+msgstr "Null characters are not allowed."
+
+#: venv/lib/python3.13/site-packages/django/db/models/base.py:1572
+#: venv/lib/python3.13/site-packages/django/forms/models.py:908
+msgid "and"
+msgstr "and"
+
+#: venv/lib/python3.13/site-packages/django/db/models/base.py:1574
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "%(model_name)s with this %(field_labels)s already exists."
+
+#: venv/lib/python3.13/site-packages/django/db/models/constraints.py:22
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr "Constraint “%(name)s” is violated."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:134
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr "Value %(value)r is not a valid choice."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:135
+msgid "This field cannot be null."
+msgstr "This field cannot be null."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:136
+msgid "This field cannot be blank."
+msgstr "This field cannot be blank."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:137
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "%(model_name)s with this %(field_label)s already exists."
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:141
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:180
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr "Field of type: %(field_type)s"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1156
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr "“%(value)s” value must be either True or False."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1157
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr "“%(value)s” value must be either True, False, or None."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1159
+msgid "Boolean (Either True or False)"
+msgstr "Boolean (Either True or False)"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1209
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr "String (up to %(max_length)s)"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1211
+msgid "String (unlimited)"
+msgstr "String (unlimited)"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1320
+msgid "Comma-separated integers"
+msgstr "Comma-separated integers"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1421
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1425
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1560
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1429
+msgid "Date (without time)"
+msgstr "Date (without time)"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1556
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+msgstr ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1564
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1569
+msgid "Date (with time)"
+msgstr "Date (with time)"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1696
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr "“%(value)s” value must be a decimal number."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1698
+msgid "Decimal number"
+msgstr "Decimal number"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1859
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
+msgstr ""
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1863
+msgid "Duration"
+msgstr "Duration"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1915
+msgid "Email address"
+msgstr "Email address"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1940
+msgid "File path"
+msgstr "File path"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2018
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr "“%(value)s” value must be a float."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2020
+msgid "Floating point number"
+msgstr "Floating point number"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2060
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr "“%(value)s” value must be an integer."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2062
+msgid "Integer"
+msgstr "Integer"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2158
+msgid "Big (8 byte) integer"
+msgstr "Big (8 byte) integer"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2175
+msgid "Small integer"
+msgstr "Small integer"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2183
+msgid "IPv4 address"
+msgstr "IPv4 address"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2214
+msgid "IP address"
+msgstr "IP address"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2305
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2306
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr "“%(value)s” value must be either None, True or False."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2308
+msgid "Boolean (Either True, False or None)"
+msgstr "Boolean (Either True, False or None)"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2359
+msgid "Positive big integer"
+msgstr "Positive big integer"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2374
+msgid "Positive integer"
+msgstr "Positive integer"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2389
+msgid "Positive small integer"
+msgstr "Positive small integer"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2405
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr "Slug (up to %(max_length)s)"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2441
+msgid "Text"
+msgstr "Text"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2521
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2525
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2529
+msgid "Time"
+msgstr "Time"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2637
+msgid "URL"
+msgstr "URL"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2661
+msgid "Raw binary data"
+msgstr "Raw binary data"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2726
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr "“%(value)s” is not a valid UUID."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2728
+msgid "Universally unique identifier"
+msgstr "Universally unique identifier"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/files.py:244
+msgid "File"
+msgstr "File"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/files.py:420
+msgid "Image"
+msgstr "Image"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/json.py:24
+msgid "A JSON object"
+msgstr "A JSON object"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/json.py:26
+msgid "Value must be valid JSON."
+msgstr "Value must be valid JSON."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:932
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr "%(model)s instance with %(field)s %(value)r does not exist."
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:934
+msgid "Foreign Key (type determined by related field)"
+msgstr "Foreign Key (type determined by related field)"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:1228
+msgid "One-to-one relationship"
+msgstr "One-to-one relationship"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:1285
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr "%(from)s-%(to)s relationship"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:1287
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr "%(from)s-%(to)s relationships"
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:1335
+msgid "Many-to-many relationship"
+msgstr "Many-to-many relationship"
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: venv/lib/python3.13/site-packages/django/forms/boundfield.py:185
+msgid ":?.!"
+msgstr ":?.!"
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:95
+msgid "This field is required."
+msgstr "This field is required."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:308
+msgid "Enter a whole number."
+msgstr "Enter a whole number."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:479
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:1260
+msgid "Enter a valid date."
+msgstr "Enter a valid date."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:502
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:1261
+msgid "Enter a valid time."
+msgstr "Enter a valid time."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:529
+msgid "Enter a valid date/time."
+msgstr "Enter a valid date/time."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:563
+msgid "Enter a valid duration."
+msgstr "Enter a valid duration."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:564
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr "The number of days must be between {min_days} and {max_days}."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:633
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr "No file was submitted. Check the encoding type on the form."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:634
+msgid "No file was submitted."
+msgstr "No file was submitted."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:635
+msgid "The submitted file is empty."
+msgstr "The submitted file is empty."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:637
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgstr[1] ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:642
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr "Please either submit a file or check the clear checkbox, not both."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:710
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:882
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:968
+#: venv/lib/python3.13/site-packages/django/forms/models.py:1592
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr "Select a valid choice. %(value)s is not one of the available choices."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:970
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:1089
+#: venv/lib/python3.13/site-packages/django/forms/models.py:1590
+msgid "Enter a list of values."
+msgstr "Enter a list of values."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:1090
+msgid "Enter a complete value."
+msgstr "Enter a complete value."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:1332
+msgid "Enter a valid UUID."
+msgstr "Enter a valid UUID."
+
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:1362
+msgid "Enter a valid JSON."
+msgstr "Enter a valid JSON."
+
+#. Translators: This is the default suffix added to form field labels
+#: venv/lib/python3.13/site-packages/django/forms/forms.py:94
+msgid ":"
+msgstr ":"
+
+#: venv/lib/python3.13/site-packages/django/forms/forms.py:230
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr "(Hidden field %(name)s) %(error)s"
+
+#: venv/lib/python3.13/site-packages/django/forms/formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+
+#: venv/lib/python3.13/site-packages/django/forms/formsets.py:65
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] "Please submit at most %(num)d form."
+msgstr[1] "Please submit at most %(num)d forms."
+
+#: venv/lib/python3.13/site-packages/django/forms/formsets.py:70
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] "Please submit at least %(num)d form."
+msgstr[1] "Please submit at least %(num)d forms."
+
+#: venv/lib/python3.13/site-packages/django/forms/formsets.py:484
+#: venv/lib/python3.13/site-packages/django/forms/formsets.py:491
+msgid "Order"
+msgstr "Order"
+
+#: venv/lib/python3.13/site-packages/django/forms/formsets.py:499
+msgid "Delete"
+msgstr "Delete"
+
+#: venv/lib/python3.13/site-packages/django/forms/models.py:901
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr "Please correct the duplicate data for %(field)s."
+
+#: venv/lib/python3.13/site-packages/django/forms/models.py:906
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr "Please correct the duplicate data for %(field)s, which must be unique."
+
+#: venv/lib/python3.13/site-packages/django/forms/models.py:913
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+
+#: venv/lib/python3.13/site-packages/django/forms/models.py:922
+msgid "Please correct the duplicate values below."
+msgstr "Please correct the duplicate values below."
+
+#: venv/lib/python3.13/site-packages/django/forms/models.py:1359
+msgid "The inline value did not match the parent instance."
+msgstr "The inline value did not match the parent instance."
+
+#: venv/lib/python3.13/site-packages/django/forms/models.py:1450
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr "Select a valid choice. That choice is not one of the available choices."
+
+#: venv/lib/python3.13/site-packages/django/forms/models.py:1594
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr "“%(pk)s” is not a valid value."
+
+#: venv/lib/python3.13/site-packages/django/forms/utils.py:227
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+
+#: venv/lib/python3.13/site-packages/django/forms/widgets.py:461
+msgid "Clear"
+msgstr "Clear"
+
+#: venv/lib/python3.13/site-packages/django/forms/widgets.py:462
+msgid "Currently"
+msgstr "Currently"
+
+#: venv/lib/python3.13/site-packages/django/forms/widgets.py:463
+msgid "Change"
+msgstr "Change"
+
+#: venv/lib/python3.13/site-packages/django/forms/widgets.py:800
+msgid "Unknown"
+msgstr "Unknown"
+
+#: venv/lib/python3.13/site-packages/django/forms/widgets.py:801
+msgid "Yes"
+msgstr "Yes"
+
+#: venv/lib/python3.13/site-packages/django/forms/widgets.py:802
+msgid "No"
+msgstr "No"
+
+#. Translators: Please do not add spaces around commas.
+#: venv/lib/python3.13/site-packages/django/template/defaultfilters.py:873
+msgid "yes,no,maybe"
+msgstr "yes,no,maybe"
+
+#: venv/lib/python3.13/site-packages/django/template/defaultfilters.py:903
+#: venv/lib/python3.13/site-packages/django/template/defaultfilters.py:920
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] "%(size)d byte"
+msgstr[1] "%(size)d bytes"
+
+#: venv/lib/python3.13/site-packages/django/template/defaultfilters.py:922
+#, python-format
+msgid "%s KB"
+msgstr "%s KB"
+
+#: venv/lib/python3.13/site-packages/django/template/defaultfilters.py:924
+#, python-format
+msgid "%s MB"
+msgstr "%s MB"
+
+#: venv/lib/python3.13/site-packages/django/template/defaultfilters.py:926
+#, python-format
+msgid "%s GB"
+msgstr "%s GB"
+
+#: venv/lib/python3.13/site-packages/django/template/defaultfilters.py:928
+#, python-format
+msgid "%s TB"
+msgstr "%s TB"
+
+#: venv/lib/python3.13/site-packages/django/template/defaultfilters.py:930
+#, python-format
+msgid "%s PB"
+msgstr "%s PB"
+
+#: venv/lib/python3.13/site-packages/django/utils/dateformat.py:74
+msgid "p.m."
+msgstr "p.m."
+
+#: venv/lib/python3.13/site-packages/django/utils/dateformat.py:75
+msgid "a.m."
+msgstr "a.m."
+
+#: venv/lib/python3.13/site-packages/django/utils/dateformat.py:80
+msgid "PM"
+msgstr "PM"
+
+#: venv/lib/python3.13/site-packages/django/utils/dateformat.py:81
+msgid "AM"
+msgstr "AM"
+
+#: venv/lib/python3.13/site-packages/django/utils/dateformat.py:153
+msgid "midnight"
+msgstr "midnight"
+
+#: venv/lib/python3.13/site-packages/django/utils/dateformat.py:155
+msgid "noon"
+msgstr "noon"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:7
+msgid "Monday"
+msgstr "Monday"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:8
+msgid "Tuesday"
+msgstr "Tuesday"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:9
+msgid "Wednesday"
+msgstr "Wednesday"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:10
+msgid "Thursday"
+msgstr "Thursday"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:11
+msgid "Friday"
+msgstr "Friday"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:12
+msgctxt "dates"
+msgid "Saturday"
+msgstr "Saturday"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:13
+msgctxt "dates_sun"
+msgid "Sunday"
+msgstr "Sunday"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:16
+msgid "Mon"
+msgstr "Mon"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:17
+msgid "Tue"
+msgstr "Tue"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:18
+msgid "Wed"
+msgstr "Wed"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:19
+msgid "Thu"
+msgstr "Thu"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:20
+msgid "Fri"
+msgstr "Fri"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:21
+msgid "Sat"
+msgstr "Sat"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:22
+msgid "Sun"
+msgstr "Sun"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:25
+msgid "January"
+msgstr "January"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:26
+msgid "February"
+msgstr "February"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:27
+msgid "March"
+msgstr "March"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:28
+msgid "April"
+msgstr "April"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:29
+msgid "May"
+msgstr "May"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:30
+msgid "June"
+msgstr "June"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:31
+msgid "July"
+msgstr "July"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:32
+msgid "August"
+msgstr "August"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:33
+msgid "September"
+msgstr "September"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:34
+msgid "October"
+msgstr "October"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:35
+msgid "November"
+msgstr "November"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:36
+msgid "December"
+msgstr "December"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:39
+msgid "jan"
+msgstr "jan"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:40
+msgid "feb"
+msgstr "feb"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:41
+msgid "mar"
+msgstr "mar"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:42
+msgid "apr"
+msgstr "apr"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:43
+msgid "may"
+msgstr "may"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:44
+msgid "jun"
+msgstr "jun"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:45
+msgid "jul"
+msgstr "jul"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:46
+msgid "aug"
+msgstr "aug"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:47
+msgid "sep"
+msgstr "sep"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:48
+msgid "oct"
+msgstr "oct"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:49
+msgid "nov"
+msgstr "nov"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:50
+msgid "dec"
+msgstr "dec"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr "Jan."
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr "Feb."
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr "March"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr "April"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr "May"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr "June"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr "July"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr "Aug."
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr "Sept."
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr "Oct."
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr "Nov."
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr "Dec."
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr "January"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr "February"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr "March"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr "April"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr "May"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr "June"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr "July"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr "August"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr "September"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr "October"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr "November"
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr "December"
+
+#: venv/lib/python3.13/site-packages/django/utils/ipv6.py:20
+msgid "This is not a valid IPv6 address."
+msgstr "This is not a valid IPv6 address."
+
+#: venv/lib/python3.13/site-packages/django/utils/text.py:67
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr "%(truncated_text)s…"
+
+#: venv/lib/python3.13/site-packages/django/utils/text.py:278
+msgid "or"
+msgstr "or"
+
+#. Translators: This string is used as a separator between list elements
+#: venv/lib/python3.13/site-packages/django/utils/text.py:297
+#: venv/lib/python3.13/site-packages/django/utils/timesince.py:135
+msgid ", "
+msgstr ", "
+
+#: venv/lib/python3.13/site-packages/django/utils/timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] "%(num)d year"
+msgstr[1] "%(num)d years"
+
+#: venv/lib/python3.13/site-packages/django/utils/timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] "%(num)d month"
+msgstr[1] "%(num)d months"
+
+#: venv/lib/python3.13/site-packages/django/utils/timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] "%(num)d week"
+msgstr[1] "%(num)d weeks"
+
+#: venv/lib/python3.13/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] "%(num)d day"
+msgstr[1] "%(num)d days"
+
+#: venv/lib/python3.13/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] "%(num)d hour"
+msgstr[1] "%(num)d hours"
+
+#: venv/lib/python3.13/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] "%(num)d minute"
+msgstr[1] "%(num)d minutes"
+
+#: venv/lib/python3.13/site-packages/django/views/csrf.py:29
+msgid "Forbidden"
+msgstr "Forbidden"
+
+#: venv/lib/python3.13/site-packages/django/views/csrf.py:30
+msgid "CSRF verification failed. Request aborted."
+msgstr "CSRF verification failed. Request aborted."
+
+#: venv/lib/python3.13/site-packages/django/views/csrf.py:34
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+
+#: venv/lib/python3.13/site-packages/django/views/csrf.py:40
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+
+#: venv/lib/python3.13/site-packages/django/views/csrf.py:45
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+
+#: venv/lib/python3.13/site-packages/django/views/csrf.py:54
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+
+#: venv/lib/python3.13/site-packages/django/views/csrf.py:60
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+
+#: venv/lib/python3.13/site-packages/django/views/csrf.py:66
+msgid "More information is available with DEBUG=True."
+msgstr "More information is available with DEBUG=True."
+
+#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:44
+msgid "No year specified"
+msgstr "No year specified"
+
+#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:64
+#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:115
+#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:214
+msgid "Date out of range"
+msgstr "Date out of range"
+
+#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:94
+msgid "No month specified"
+msgstr "No month specified"
+
+#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:147
+msgid "No day specified"
+msgstr "No day specified"
+
+#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:194
+msgid "No week specified"
+msgstr "No week specified"
+
+#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:349
+#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:380
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr "No %(verbose_name_plural)s available"
+
+#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:652
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
+msgstr ""
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
+
+#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:692
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr "Invalid date string “%(datestr)s” given format “%(format)s”"
+
+#: venv/lib/python3.13/site-packages/django/views/generic/detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "No %(verbose_name)s found matching the query"
+
+#: venv/lib/python3.13/site-packages/django/views/generic/list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr "Page is not “last”, nor can it be converted to an int."
+
+#: venv/lib/python3.13/site-packages/django/views/generic/list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr "Invalid page (%(page_number)s): %(message)s"
+
+#: venv/lib/python3.13/site-packages/django/views/generic/list.py:169
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr "Empty list and “%(class_name)s.allow_empty” is False."
+
+#: venv/lib/python3.13/site-packages/django/views/static.py:49
+msgid "Directory indexes are not allowed here."
+msgstr "Directory indexes are not allowed here."
+
+#: venv/lib/python3.13/site-packages/django/views/static.py:51
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr "“%(path)s” does not exist"
+
+#: venv/lib/python3.13/site-packages/django/views/static.py:68
+#: venv/lib/python3.13/site-packages/django/views/templates/directory_index.html:8
+#: venv/lib/python3.13/site-packages/django/views/templates/directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr "Index of %(directory)s"
+
+#: venv/lib/python3.13/site-packages/django/views/templates/default_urlconf.html:7
+#: venv/lib/python3.13/site-packages/django/views/templates/default_urlconf.html:204
+msgid "The install worked successfully! Congratulations!"
+msgstr "The install worked successfully! Congratulations!"
+
+#: venv/lib/python3.13/site-packages/django/views/templates/default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+
+#: venv/lib/python3.13/site-packages/django/views/templates/default_urlconf.html:208
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+
+#: venv/lib/python3.13/site-packages/django/views/templates/default_urlconf.html:217
+msgid "Django Documentation"
+msgstr "Django Documentation"
+
+#: venv/lib/python3.13/site-packages/django/views/templates/default_urlconf.html:218
+msgid "Topics, references, &amp; how-to’s"
+msgstr "Topics, references, &amp; how-to’s"
+
+#: venv/lib/python3.13/site-packages/django/views/templates/default_urlconf.html:226
+msgid "Tutorial: A Polling App"
+msgstr "Tutorial: A Polling App"
+
+#: venv/lib/python3.13/site-packages/django/views/templates/default_urlconf.html:227
+msgid "Get started with Django"
+msgstr "Get started with Django"
+
+#: venv/lib/python3.13/site-packages/django/views/templates/default_urlconf.html:235
+msgid "Django Community"
+msgstr "Django Community"
+
+#: venv/lib/python3.13/site-packages/django/views/templates/default_urlconf.html:236
+msgid "Connect, get help, or contribute"
+msgstr "Connect, get help, or contribute"
+
+#: venv/lib/python3.13/site-packages/modeltranslation/widgets.py:32
+msgid "None"
+msgstr "None"

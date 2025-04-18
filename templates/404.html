@@ -1,0 +1,35 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+
+		<!--/bo'lim uchun nom -->
+		<div class="breadcrumbs overlay">
+			<div class="container">
+			  <div class="bread-inner">
+				<div class="row">
+				  <div class="col-12">
+					<h2>{% trans 'Xatolik.' %}</h2>
+					<ul class="bread-list">
+					  <li><a href="{% url 'index' %}">{% trans 'Uyga qaytish.' %}</a></li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!--/Bo'lim uchun nom -->
+
+		  <section class="login section">
+			<div class="container">
+				<div class="d-flex justify-content-center align-items-center">
+
+					<img src="{% static "main/img/development.svg" %}" alt="#" width="">
+
+				</div>
+			</div>
+		  </section>
+
+
+{% endblock body %}

@@ -1,0 +1,156 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-outter"></div>
+            <div class="loader-inner"></div>
+
+            <div class="indicator">
+                <svg width="16px" height="12px">
+                    <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!--/bo'lim uchun nom -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>{% trans 'Aloqa' %}</h2>
+                        <ul class="bread-list">
+                            <li><a href="{% url 'about_center' %}">{% trans 'Markaz' %}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Bo'lim uchun nom -->
+
+    <section class="contact-us section">
+        <div class="container">
+            <div class="inner">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="contact-us-left mt-4">
+                            <!--Start Google-map -->
+                            <div id="myMap pt-1">
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d947.6186807350473!2d69.17207272428132!3d41.3568645690916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8f0041bd5517%3A0xa956cda4a6a8f107!2sXalqaro%20Molekulyar%20Allergologiya%20Markazi!5e0!3m2!1sen!2s!4v1744284728900!5m2!1sen!2s"
+                                        width="600" height="610" style="border: none;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            </div>
+                            <!--/End Google-map -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt-5">
+                        <div class="contact-us-form">
+                            <h2>{% trans "Biz bilan bog'laning" %}</h2>
+                            <p>{% trans "Agar sizda biron bir savol bo'lsa, biz bilan bog'laning." %}</p>
+                            <!-- Form -->
+                            <form action="{% url 'contact_us' %}" class="form" method="post">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" name="name" placeholder="{% trans 'Ismingiz' %}"
+                                                   required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="email" name="email" placeholder="{% trans 'Pochta' %}"
+                                                   required=""
+                                                   style="text-transform:lowercase">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" name="phone" placeholder="{% trans 'Telefon' %}"
+                                                   required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" name="subject" placeholder="{% trans 'Mavzu' %}"
+                                                   required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <textarea name="message" placeholder="{% trans 'Xabaringiz' %}"
+                                                      required=""></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group login-btn">
+                                            <button class="btn" type="submit">{% trans 'Yuborish' %}</button>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label class="checkbox-inline" for="2"><input name="news" id="2"
+                                                                                          type="checkbox">
+                                                {% blocktranslate %}
+                                                    Obuna bo'lishni xohlaysizmi ?
+                                                {% endblocktranslate %}
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <!--/ End Form -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="row">
+                    <!-- single-info -->
+                    <div class="col-lg-4 col-12">
+                        <div class="single-info">
+                            <i class="icofont icofont-ui-call"></i>
+                            <div class="content">
+                                <h3><a href="tel:+998555143494">+998 55 514 34 94</a></h3>
+                                <p><a href="mailto:info@icma.uz">info@icma.uz</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/End single-info -->
+                    <!-- single-info -->
+                    <div class="col-lg-4 col-12">
+                        <div class="single-info">
+                            <i class="icofont-google-map"></i>
+                            <div class="content">
+                                <h3>{% trans 'TashMI-2' %}</h3>
+                                <p>{% trans "Soglom avlod ko'chasi" %}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/End single-info -->
+                    <!-- single-info -->
+                    <div class="col-lg-4 col-12">
+                        <div class="single-info">
+                            <i class="icofont icofont-wall-clock"></i>
+                            <div class="content">
+                                <h3>09:00 - 18:00</h3>
+                                <p>{% trans 'Shanba Yakshanba dam olish kuni' %}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/End single-info -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock body %}
