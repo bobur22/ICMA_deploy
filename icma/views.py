@@ -10,6 +10,10 @@ from django.conf import settings
 from django.utils.translation import gettext_lazy as _
 import requests
 
+"""
+    Index or Home Section:
+"""
+
 
 def index(request):
     newses = News.objects.all().order_by('-n_date')[:3]
@@ -22,14 +26,29 @@ def index(request):
         , 'statistics': statistics, 'photo_gallery': photo_gallery})
 
 
+"""
+    About Section:
+"""
+
+
 def about_center(request):
     center = Center.objects.all()
     return render(request, template_name='about_center.html', context={'center': center})
 
 
-def administrarion(request):
+"""
+    Administration Section:
+"""
+
+
+def administration(request):
     director = Director.objects.all()
     return render(request, template_name='administration.html', context={'director': director})
+
+
+"""
+    Article Section:
+"""
 
 
 def articles(request):
@@ -37,6 +56,11 @@ def articles(request):
     page_number = request.GET.get("page")
     articles_obj = paginator.get_page(page_number)
     return render(request, template_name='articles.html', context={'articles_obj': articles_obj})
+
+
+"""
+    Article detail Section:
+"""
 
 
 def articles_detail(request, id):
@@ -49,6 +73,11 @@ def articles_detail(request, id):
     return render(request, template_name='articles_detail.html', context={'articles': articles,
                                                                           'article': article,
                                                                           "article_count": article_count})
+
+
+"""
+    Contact us Section:
+"""
 
 
 def contact_us(request):
@@ -110,9 +139,19 @@ def contact_us(request):
     return render(request, 'contact_us.html')
 
 
+"""
+    Corruption Section:
+"""
+
+
 def corruption(request):
     corruptions = Corruption.objects.all()
     return render(request, template_name='corruption.html', context={'corruptions': corruptions})
+
+
+"""
+    Employees Section:
+"""
 
 
 def employees(request):
@@ -120,14 +159,29 @@ def employees(request):
     return render(request, template_name='employees.html', context={'employees': employees})
 
 
+"""
+    Infrostructure Section:
+"""
+
+
 def infrostructure(request):
     infrostructure = Infrastructure.objects.all()
     return render(request, template_name='infrostructure.html', context={'infrostructure': infrostructure})
 
 
+"""
+    Monitoring Section:
+"""
+
+
 def monitoring(request):
     monitorings = Monitoring.objects.all().filter(status=1)
     return render(request, template_name='monitoring.html', context={'monitorings': monitorings})
+
+
+"""
+    Monitoring detail Section:
+"""
 
 
 def monitoring_detail(request, id):
@@ -143,12 +197,22 @@ def monitoring_detail(request, id):
                                                                             "monitoring_count": monitoring_count})
 
 
+"""
+    News Section:
+"""
+
+
 def news(request):
     paginator = Paginator(News.objects.all().order_by('-n_date'), 9)
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
 
     return render(request, template_name='news.html', context={'page_obj': page_obj})
+
+
+"""
+    News detail Section:
+"""
 
 
 def news_detail(request, id):
@@ -163,9 +227,24 @@ def news_detail(request, id):
                                                                       "news_count": news_count})
 
 
+"""
+    Handling 404 or Errors Section:
+"""
+
+
 def hendling_404(request, exception):
     return render(request, "404.html")
 
+
+"""
+    Passport Section:
+    This section is currently under development.
+    If needed, you can uncomment the next function to temporarily enable the working version of the passport page.
+"""
+
+
+def passport(request):
+    return render(request, "page_development.html")
 
 # def passport(request):
 #     decision = 0
@@ -180,28 +259,3 @@ def hendling_404(request, exception):
 #             file_url = "/static/main/img/tuzilma.jpg"
 #
 #     return render(request, "passport.html", {"file_url": file_url, "decision": decision})
-
-def passport(request):
-    return render(request, "page_development.html")
-# def passport(request):
-#     decision = 0
-#     file_url = None
-#     form = PassportForm()
-#
-#     if request.method == "POST":
-#         form = PassportForm(request.POST, request.FILES)
-#         code = request.POST.get("code", "").strip()
-#         date = request.POST.get("date", "").strip()
-#
-#         if code and date:  # Bo‘sh qiymatlar tekshiriladi
-#             if Passport.objects.filter(p_code=code, given_date=date).exists():
-#                 decision = 1
-#                 file_url = "/static/main/img/tuzilma.jpg"
-#
-#                 if form.is_valid():
-#                     form.save()
-#                     return redirect("master")
-#             else:
-#                 decision = -1  # Agar mos kelmasa, boshqa natija berish mumkin
-#
-#     return render(request, "passport.html", {"file_url": file_url, "decision": decision, "form": form})
