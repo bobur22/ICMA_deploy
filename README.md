@@ -5,11 +5,23 @@
 
 ## 🌐 Project Link
 
-🔗 [Visit the live website](http://icma.uz/en/)
-
+<-- 🔗 [Visit the live website](http://icma.uz/en/)
 <a href="https://github.com/bobur22/ICMA_deploy.git">
    <img width="300px" height="100px" src="http://icma.uz/static/main/img/language_en.svg" />
-</a>
+</a> -->
+
+<table>
+  <tr>
+    <td>
+      🔗 <a href="http://icma.uz/en/">Visit the live website</a>
+    </td>
+    <td>
+      <a href="https://github.com/bobur22/ICMA_deploy.git">
+        <img width="300px" height="100px" src="http://icma.uz/static/main/img/language_en.svg" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
