@@ -109,14 +109,14 @@ def contact_us(request):
         # })
 
         # Send email
-        # send_mail(
-        #     subject='Contact Form',
-        #     message='Your message was confirmed.',
-        #     from_email=settings.DEFAULT_FROM_EMAIL,
-        #     recipient_list=[contact.c_email],
-        #     html_message=html_content,
-        #     fail_silently=False,
-        # )
+        send_mail(
+            subject='Contact Form',
+            message='Your message was confirmed.',
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            recipient_list=[contact.c_email],
+            html_message=html_content,
+            fail_silently=False,
+        )
 
         # Send message to Telegram
         telegram_text = (
