@@ -7,6 +7,10 @@
 
 🔗 [Visit the live website](http://icma.uz/en/)
 
+<a href="https://github.com/bobur22/ICMA_deploy.git">
+   <img width="90px" height="40px" src="https://github.com/bobur22/ICMA_deploy/assets/main/img/language_en.svg" />
+</a>
+
 ---
 
 ## 🧠 Introduction
