@@ -100,23 +100,23 @@ def contact_us(request):
         )
 
         # Prepare email content
-        html_content = render_to_string('email/email_en.html', {
-            'name': contact.c_fname,
-            'email': contact.c_email,
-            'phone': contact.c_phone_number,
-            'subject': contact.c_theme,
-            'message': contact.c_message
-        })
+        # html_content = render_to_string('email/email_en.html', {
+        #     'name': contact.c_fname,
+        #     'email': contact.c_email,
+        #     'phone': contact.c_phone_number,
+        #     'subject': contact.c_theme,
+        #     'message': contact.c_message
+        # })
 
         # Send email
-        send_mail(
-            subject='Contact Form',
-            message='Your message was confirmed.',
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            recipient_list=[contact.c_email],
-            html_message=html_content,
-            fail_silently=False,
-        )
+        # send_mail(
+        #     subject='Contact Form',
+        #     message='Your message was confirmed.',
+        #     from_email=settings.DEFAULT_FROM_EMAIL,
+        #     recipient_list=[contact.c_email],
+        #     html_message=html_content,
+        #     fail_silently=False,
+        # )
 
         # Send message to Telegram
         telegram_text = (
