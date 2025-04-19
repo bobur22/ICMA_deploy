@@ -1,6 +1,10 @@
-<a href="https://github.com/bobur22/ICMA_deploy.git">
-   <img width="300px" height="100px" src="http://icma.uz/static/main/img/language_en.svg" align="center" />
-</a>
+<div align="center" style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+
+  <a href="https://github.com/bobur22/ICMA_deploy.git">
+    <img width="300px" height="100px" src="http://icma.uz/static/main/img/language_en.svg" />
+  </a>
+
+</div>
 
 <h1 align="center">👋 Welcome to the ICMA Project</h1>
 <h3 align="center">A passionate full-stack developer from Uzbekistan</h3>
