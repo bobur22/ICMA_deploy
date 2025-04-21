@@ -72,7 +72,7 @@ class Employee(models.Model):
 
 # News model for posting announcements or news
 class News(models.Model):
-    n_header = models.CharField(max_length=50, verbose_name=_("yangilik sarlavhasi"),
+    n_header = models.CharField(max_length=220, verbose_name=_("yangilik sarlavhasi"),
                                 help_text=_("Iltimos, yangilik sarlavhasini kiriting."))
     n_paragraph = RichTextField(verbose_name=_("yangilik matni"), help_text=_("Iltimos, yangilik matnini kiriting."))
     n_date = models.DateField(default=timezone.now, verbose_name=_("yangilik sanasi"),
@@ -94,7 +94,7 @@ class News(models.Model):
 
 # Article model for storing published articles
 class Article(models.Model):
-    a_header = models.CharField(max_length=50, verbose_name=_("maqola sarlavhasi"),
+    a_header = models.CharField(max_length=220, verbose_name=_("maqola sarlavhasi"),
                                 help_text=_("Iltimos, maqola sarlavhasini kiriting."))
     a_paragraph = RichTextField(verbose_name=_("maqola matni"),
                                 help_text=_("Iltimos, maqola matnini kiriting."))
