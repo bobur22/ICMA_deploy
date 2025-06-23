@@ -1,6 +1,6 @@
 <div align="center" style="display: flex; justify-content: center; align-items: center; gap: 20px;">
 
-  <a href="https://github.com/bobur22/ICMA_deploy.git">
+  <a href="https://icma.uz/en/">
     <img width="300px" height="100px" src="http://icma.uz/static/main/img/language_en.svg" />
   </a>
 
@@ -29,9 +29,12 @@ Follow the steps below to set up the project on your local machine.
 
 ## Before start clone the repository to your lap top.
     git clone git@github.com:bobur22/ICMA_deploy.git
+    
 ## And then open your terminal and start creating by venv file
       python3 -m venv venv
+      
 ## then activate venv file.
+
 ## And after that start with installing requirements.txt
     pip install -r requirements.txt
 
@@ -39,16 +42,16 @@ Follow the steps below to set up the project on your local machine.
     ## 1. In the path ICMA_deploy/config_/ you can see file .env.example file that keeps website related data so fill it than you can move to the next step.
     
 ## then make a migrations.
-    ./manage.py makemigrations
+    python manage.py makemigrations
 
 ## and after that migrate it.
-    ./manage.py migrate
+    python manage.py migrate
 
 ## before runing server create super user in order to open admin panel.
-    ./manage.py createsuperuser
+    python manage.py createsuperuser
 
 ## then finally start project.
-    ./manage.py runserver
+    python manage.py runserver
 
 #Then you can open website on your local host.
 ## and project is ready.
