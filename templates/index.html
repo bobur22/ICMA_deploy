@@ -150,7 +150,7 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="single-news">
                             <div class="news-head">
-                                <img class="" src="{{ news.n_news_img.url }}" alt="#">
+                                <img class="" src="{{ news.n_news_img.url }}" loading="lazy" alt="#">
                             </div>
                             <div class="news-body">
                                 <div class="news-content">
@@ -331,7 +331,7 @@
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="single-news">
                             <div class="news-head">
-                                <img class="" src="{{ article.a_article_img.url }}" alt="#">
+                                <img class="" src="{{ article.a_article_img.url }}" loading="lazy" alt="#">
                             </div>
                             <div class="news-body">
                                 <div class="news-content">
@@ -363,22 +363,22 @@
                 <div class="col-lg-12 col-md-12 col-12">
                     <div class="owl-carousel clients-slider">
                         <div class="single-clients">
-                            <img src="{% static 'main/img/client6.png' %}" alt="#">
+                            <img src="{% static 'main/img/client6.png' %}" loading="lazy" alt="#">
                         </div>
                         <div class="single-clients">
-                            <img src="{% static 'main/img/client7.png' %}" alt="#">
+                            <img src="{% static 'main/img/client7.png' %}" loading="lazy" alt="#">
                         </div>
                         <div class="single-clients">
-                            <img src="{% static 'main/img/client5.png' %}" alt="#">
+                            <img src="{% static 'main/img/client5.png' %}" loading="lazy" alt="#">
                         </div>
                         <div class="single-clients">
-                            <img src="{% static 'main/img/client6.png' %}" alt="#">
+                            <img src="{% static 'main/img/client6.png' %}" loading="lazy" alt="#">
                         </div>
                         <div class="single-clients">
-                            <img src="{% static 'main/img/client7.png' %}" alt="#">
+                            <img src="{% static 'main/img/client7.png' %}" loading="lazy" alt="#">
                         </div>
                         <div class="single-clients">
-                            <img src="{% static 'main/img/client5.png' %}" alt="#">
+                            <img src="{% static 'main/img/client5.png' %}" loading="lazy" alt="#">
                         </div>
                     </div>
                 </div>
@@ -406,7 +406,7 @@
                         {% for photo in photo_gallery %}
 
                             <div class="single-pf">
-                                <img src="{{ photo.photo.url }}" alt="#">
+                                <img src="{{ photo.photo.url }}" loading="lazy" alt="#">
                             </div>
 
                         {% endfor %}
