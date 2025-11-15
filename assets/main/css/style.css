@@ -959,6 +959,8 @@ body {
     color: #fff;
     width: 100%;
     margin-bottom: 3px;
+    min-height: 36px;
+    -webkit-line-clamp: 2;
 }
 
 .schedule .single-schedule .time-sidual li:last-child {
