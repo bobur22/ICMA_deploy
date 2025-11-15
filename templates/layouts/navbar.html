@@ -94,20 +94,20 @@
         <div class="container">
             <div class="inner">
                 <div class="row d-flex justify-content-between">
-                    <div class="col-md-3 col-lg-3 col-12">
+                    <div class="px-4 col-md-3 col-lg-3 col-12 d-flex align-items-center justify-content-between">
                         <!-- Start Logo -->
                         <div class="logo">
                             {% if request.LANGUAGE_CODE == 'uz' %}
                                 <a href="{% url 'index' %}">
-                                    <img src="{% static 'main/img/language_uz.svg' %}" alt="Logo">
+                                    <img src="{% static 'main/img/language_uz.svg' %}" alt="Logo" loading="lazy">
                                 </a>
                             {% elif request.LANGUAGE_CODE == 'ru' %}
                                 <a href="{% url 'index' %}">
-                                    <img src="{% static 'main/img/language_ru.svg' %}" alt="Logo">
+                                    <img src="{% static 'main/img/language_ru.svg' %}" alt="Logo" loading="lazy">
                                 </a>
                             {% elif request.LANGUAGE_CODE == 'en' %}
                                 <a href="{% url 'index' %}">
-                                    <img src="{% static 'main/img/language_en.svg' %}" alt="Logo">
+                                    <img src="{% static 'main/img/language_en.svg' %}" alt="Logo" loading="lazy">
                                 </a>
                             {% endif %}
 
