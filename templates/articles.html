@@ -40,7 +40,7 @@
                                         <span class="date pt-1" style="font-size: 16px; background: none; color: #1A76D1;"><i class="bi bi-eye"
                                                                                            style="padding-right: 6px"></i>{{ article.a_view_counter }}</span>
                                     </div>
-                                    <h2><a href="{% url 'articles_detail' id=article.id %}">{{ article.a_header|truncatechars_html:63 }}</a></h2>
+                                    <h2><a href="{% url 'articles_detail' id=article.id %}">{{ article.a_header|truncatechars_html:58 }}</a></h2>
                                     <p class="text">{{ article.a_paragraph|truncatechars_html:77|safe }}</p>
                                 </div>
                             </div>
