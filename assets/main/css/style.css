@@ -1337,11 +1337,14 @@ body {
 
 .portfolio .single-pf {
     position: relative;
+    height: 250px;
 }
 
 .portfolio .single-pf img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .portfolio .single-pf:before {
@@ -2075,6 +2078,7 @@ body {
 }
 
 .team .t-head {
+    height: 400px;
     position: relative;
     overflow: hidden;
 }
@@ -2102,6 +2106,10 @@ body {
 
 .team .t-head img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
     position: relative;
 }
 
