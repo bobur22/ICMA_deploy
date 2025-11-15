@@ -2415,6 +2415,7 @@ body {
 }
 
 .blog .single-news .news-body h2 {
+    min-height: 60px;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -2424,6 +2425,7 @@ body {
 .blog .single-news .news-body h2 a {
     color: #2C2D3F;
     font-weight: 500;
+    -webkit-line-clamp: 2;
 }
 
 .blog .single-news .news-body h2 a:hover {

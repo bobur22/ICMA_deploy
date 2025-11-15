@@ -26,7 +26,7 @@
     <div class="service-details-area section pb-0 blog">
         <div class="container">
             <div class="single-news">
-                <div class="news-head">
+                <div class="news-head h-100">
                     <img src="{{ news.n_news_img.url }}" alt="#" loading="lazy">
                 </div>
                 <div class="news-body">
@@ -62,7 +62,7 @@
                                         <span class="date pt-1" style="font-size: 14px; background: none; color: #1A76D1;"><i class="bi bi-eye"
                                                                                            style="padding-right: 6px"></i>{{ n.n_view_counter }}</span>
                                     </div>
-                                    <h2><a href="{% url 'news_detail' id=n.id %}">{{ n.n_header|truncatechars_html:63 }}</a></h2>
+                                    <h2><a href="{% url 'news_detail' id=n.id %}">{{ n.n_header|truncatechars_html:58 }}</a></h2>
                                     <p class="text">{{ n.n_paragraph|truncatechars_html:77|safe }}</p>
                                 </div>
                             </div>
